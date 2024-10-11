@@ -1,12 +1,9 @@
----
----
-
 @import "bootstrap/functions";
 @import "bootstrap/bootstrap";
 
 body {
-  background: #fcfcfc;
-  color: #333;
+  background: #918484;
+  color: white;
   width: 75%;
   min-width: 275px;
   max-width: 900px;
@@ -17,7 +14,7 @@ body {
 }
 
 a {
-  color: #666;
+  color: white;
   text-decoration: none;
 }
 
@@ -36,12 +33,12 @@ header {
   margin-top: 1.5em;
 }
 
-#gloopy {
+#pisces {
   display: flex;
   justify-content: center;
 }
 
-#gloopy img {
+#pisces img {
   width: 100%;
   height: auto;
 }
