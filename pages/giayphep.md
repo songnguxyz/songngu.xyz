@@ -2,7 +2,7 @@
 layout: default
 title: Licensing
 description: Information about licensing content from sites on the Weird Gloop network.
-permalink: /licensing/
+permalink: /giayphep/
 ---
 
 # Licensing

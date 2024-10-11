@@ -2,7 +2,7 @@
 layout: default
 title: Privacy
 description: The Privacy Policy governing all Weird Gloop websites and wikis.
-permalink: /privacy/
+permalink: /lienhe/
 ---
 
 # Privacy
