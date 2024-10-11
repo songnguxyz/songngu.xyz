@@ -104,53 +104,36 @@ header {
   margin: 0;
 }
 
-#project-rs {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-RS.jpg');
+#project-wlhmn {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-WLHMN.jpg');
 }
 
-#project-rs .logo {
-  background-image: url('../images/RuneScape-Wiki-logo.png');
+#project-wlhmn .logo {
+  background-image: url('../images/WLHMN.png');
 }
 
-#project-osrs {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-OSRS.jpg');
+#project-wcrkvn {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-WCRKVN.jpg');
 }
 
-#project-osrs .logo {
-  background-image: url('../images/Old-School-RuneScape-Wiki-logo.png');
+#project-wcrkvn .logo {
+  background-image: url('../images/WCRKVN.png');
 }
 
-#project-rsc {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-RSC.jpg');
+#project-waltp {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-WALTP.jpg');
 }
 
-#project-rsc .logo {
-  background-image: url('../images/RuneScape-Classic-Wiki-logo.png');
+#project-waltp .logo {
+  background-image: url('../images/WALTP.png');
 }
 
-#project-ptrs {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-PTRS.jpg');
+#project-wcg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-WCG.jpg');
 }
 
-#project-ptrs .logo {
-  background-image: url('../images/Pt-BR-RuneScape-Wiki-logo.png');
-}
-
-#project-mc {
-  max-width: 420px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-MC.png');
-}
-
-#project-mc .logo {
-  background-image: url('../images/Minecraft Wiki logo.png');
-}
-
-#project-meta {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-Meta.jpg');
-}
-
-#project-meta .logo {
-  background-image: url('../images/Meta-RuneScape-Wiki-logo.png');
+#project-wcg .logo {
+  background-image: url('../images/WCG.png');
 }
 
 /* footer */

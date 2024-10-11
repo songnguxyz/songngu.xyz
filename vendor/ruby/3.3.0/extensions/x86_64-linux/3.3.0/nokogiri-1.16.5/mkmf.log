@@ -1,0 +1,712 @@
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -std=c99 -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -Wno-declaration-after-statement is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -Wno-declaration-after-statement -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -O2 is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -O2 -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -g is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -g -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -Winline is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -Winline -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -Wmissing-noreturn is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -Wmissing-noreturn -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -Wconversion -Wno-sign-conversion is accepted as CFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -Wconversion -Wno-sign-conversion -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+try_link_iconv: checking for iconv... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <stdlib.h>
+ 4: #include <iconv.h>
+ 5: int main(void)
+ 6: {
+ 7:     iconv_t cd = iconv_open("", "");
+ 8:     iconv(cd, NULL, NULL, NULL, NULL);
+ 9:     return EXIT_SUCCESS;
+10: }
+/* end */
+
+--------------------
+
+append_cppflags: checking for whether -DNOKOGIRI_PACKAGED_LIBRARIES is accepted as CPPFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I.    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -DNOKOGIRI_PACKAGED_LIBRARIES -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+append_cppflags: checking for whether -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" is accepted as CPPFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Remove-script-macro-support.patch 0002-Update-entities-to-remove-handling-of-ssi.patch 0003-libxml2.la-is-in-top_builddir.patch 0009-allow-wildcard-namespaces.patch 0010-update-config.guess-and-config.sub-for-libxml2.patch 0011-rip-out-libxml2-s-libc_single_threaded-support.patch\"" -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_library: checking for -llzma... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby -llzma  -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+append_cppflags: checking for whether -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" is accepted as CPPFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -DNOKOGIRI_LIBXSLT_PATCHES="\"0001-update-config.guess-and-config.sub-for-libxslt.patch\"" -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlParseDoc() in libxml/parser.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxml/parser.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xsltParseStylesheetDoc() in libxslt/xslt.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:16:57: error: use of undeclared identifier 'xsltParseStylesheetDoc'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: extern void xsltParseStylesheetDoc();
+17: int t(void) { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for exsltFuncRegister() in libexslt/exslt.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libexslt/exslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return !p; }
+/* end */
+
+--------------------
+
+append_cppflags: checking for whether -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/include is accepted as CPPFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/include -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
+have_func: checking for gumbo_parse_with_options() in nokogiri_gumbo.h... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <nokogiri_gumbo.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))gumbo_parse_with_options; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlHasFeature'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlHasFeature();
+15: int t(void) { xmlHasFeature(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlFirstElementChild'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlFirstElementChild();
+15: int t(void) { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlRelaxNGSetParserStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlRelaxNGSetParserStructuredErrors();
+15: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlRelaxNGSetValidStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlRelaxNGSetValidStructuredErrors();
+15: int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlSchemaSetValidStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlSchemaSetValidStructuredErrors();
+15: int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+conftest.c:14:57: error: use of undeclared identifier 'xmlSchemaSetParserStructuredErrors'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+                                                        ^
+1 warning and 1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void xmlSchemaSetParserStructuredErrors();
+15: int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_category_warning()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -o conftest -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC conftest.c  -L. -L/usr/local/rvm/rubies/ruby-3.3.4/lib -Wl,-rpath,/usr/local/rvm/rubies/ruby-3.3.4/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib -L/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -Wl,-rpath,/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed    /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libexslt.a -lm -ldl -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib/libxslt.a -ldl -lm -llzma -lz /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib/libxml2.a -llzma /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/ports/x86_64-linux/libgumbo/1.0.0-nokogiri/lib/libgumbo.a -lm -lpthread  -lc"
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warning; return !p; }
+/* end */
+
+--------------------
+
+append_cppflags: checking for whether -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"libgumbo:1.0.0-nokogiri\"" is accepted as CPPFLAGS... -------------------- no
+
+LD_LIBRARY_PATH=.:/usr/local/rvm/rubies/ruby-3.3.4/lib "clang -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/x86_64-linux -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0/ruby/backward -I/usr/local/rvm/rubies/ruby-3.3.4/include/ruby-3.3.0 -I. -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2 -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/include -I/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/include/libxml2    -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wmisleading-indentation -Wundef  -fPIC  -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"libgumbo:1.0.0-nokogiri\"" -Werror -c conftest.c"
+error: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+

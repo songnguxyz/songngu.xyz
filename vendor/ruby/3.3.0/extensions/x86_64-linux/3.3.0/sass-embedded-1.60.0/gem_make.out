@@ -1,0 +1,13 @@
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/sass-embedded-1.60.0/ext/sass
+rake RUBYARCHDIR\=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/extensions/x86_64-linux/3.3.0/sass-embedded-1.60.0 RUBYLIBDIR\=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/extensions/x86_64-linux/3.3.0/sass-embedded-1.60.0
+rake aborted!
+NameError: uninitialized constant FileUtils::URI
+/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/sass-embedded-1.60.0/ext/sass/Rakefile:141:in `fetch'
+/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/sass-embedded-1.60.0/ext/sass/Rakefile:21:in `block in <top (required)>'
+/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+/usr/local/rvm/gems/ruby-3.3.4/bin/ruby_executable_hooks:22:in `eval'
+/usr/local/rvm/gems/ruby-3.3.4/bin/ruby_executable_hooks:22:in `<main>'
+Tasks: TOP => default => install => embedded.rb => sass_embedded
+(See full trace by running task with --trace)
+
+rake failed, exit code 1

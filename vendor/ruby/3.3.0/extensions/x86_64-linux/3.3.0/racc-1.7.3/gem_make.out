@@ -1,0 +1,20 @@
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+/usr/local/rvm/rubies/ruby-3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241011-36912-eb1vco sitelibdir\=./.gem.20241011-36912-eb1vco clean
+
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241011-36912-eb1vco sitelibdir\=./.gem.20241011-36912-eb1vco
+compiling cparse.c
+warning: unknown warning option '-Wno-cast-function-type'; did you mean '-Wno-bad-function-cast'? [-Wunknown-warning-option]
+1 warning generated.
+linking shared-object racc/cparse.so
+
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241011-36912-eb1vco sitelibdir\=./.gem.20241011-36912-eb1vco install
+/usr/bin/install -m 0755 cparse.so ./.gem.20241011-36912-eb1vco/racc
+
+current directory: /workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241011-36912-eb1vco sitelibdir\=./.gem.20241011-36912-eb1vco clean

@@ -1,0 +1,198 @@
+make  all-recursive
+make[1]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7'
+Making all in include
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include'
+Making all in libxml
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include/libxml'
+Making all in private
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include/private'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include/private'
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include'
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/include'
+Making all in .
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7'
+  CC       xmllint-xmllint.o
+  CC       libxml2_la-buf.lo
+  CC       libxml2_la-chvalid.lo
+  CC       libxml2_la-dict.lo
+dict.c:462:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:481:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:519:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:545:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:676:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:916:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+dict.c:936:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+7 warnings generated.
+  CC       libxml2_la-entities.lo
+entities.c:591:68: warning: unused parameter 'attr' [-Wunused-parameter]
+xmlEncodeEntitiesInternal(xmlDocPtr doc, const xmlChar *input, int attr) {
+                                                                   ^
+1 warning generated.
+  CC       libxml2_la-encoding.lo
+  CC       libxml2_la-error.lo
+  CC       libxml2_la-globals.lo
+  CC       libxml2_la-hash.lo
+hash.c:59:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+hash.c:99:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+hash.c:290:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+hash.c:423:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+hash.c:835:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+hash.c:1140:1: warning: unknown sanitizer 'unsigned-shift-base' ignored [-Wunknown-sanitizers]
+ATTRIBUTE_NO_SANITIZE_INTEGER
+^
+./libxml.h:65:27: note: expanded from macro 'ATTRIBUTE_NO_SANITIZE_INTEGER'
+    ATTRIBUTE_NO_SANITIZE("unsigned-shift-base")
+                          ^
+6 warnings generated.
+  CC       libxml2_la-list.lo
+  CC       libxml2_la-parser.lo
+  CC       libxml2_la-parserInternals.lo
+  CC       libxml2_la-SAX2.lo
+  CC       libxml2_la-threads.lo
+  CC       libxml2_la-tree.lo
+  CC       libxml2_la-uri.lo
+  CC       libxml2_la-valid.lo
+  CC       libxml2_la-xmlIO.lo
+  CC       libxml2_la-xmlmemory.lo
+  CC       libxml2_la-xmlstring.lo
+  CC       libxml2_la-c14n.lo
+  CC       libxml2_la-catalog.lo
+  CC       libxml2_la-debugXML.lo
+  CC       libxml2_la-HTMLparser.lo
+  CC       libxml2_la-HTMLtree.lo
+  CC       libxml2_la-nanohttp.lo
+  CC       libxml2_la-xzlib.lo
+  CC       libxml2_la-xmlmodule.lo
+  CC       libxml2_la-xmlsave.lo
+  CC       libxml2_la-pattern.lo
+  CC       libxml2_la-xmlreader.lo
+  CC       libxml2_la-xmlregexp.lo
+  CC       libxml2_la-xmlunicode.lo
+  CC       libxml2_la-relaxng.lo
+  CC       libxml2_la-xmlschemas.lo
+  CC       libxml2_la-xmlschemastypes.lo
+  CC       libxml2_la-schematron.lo
+  CC       libxml2_la-xmlwriter.lo
+  CC       libxml2_la-xinclude.lo
+  CC       libxml2_la-xpath.lo
+xpath.c:4216:1: warning: unknown warning group '-Wcast-function-type', ignored [-Wunknown-warning-option]
+XML_IGNORE_FPTR_CAST_WARNINGS
+^
+./include/libxml/xmlversion.h:456:7: note: expanded from macro 'XML_IGNORE_FPTR_CAST_WARNINGS'
+      _Pragma("GCC diagnostic ignored \"-Wcast-function-type\"")
+      ^
+<scratch space>:100:25: note: expanded from here
+ GCC diagnostic ignored "-Wcast-function-type"
+                        ^
+xpath.c:4299:1: warning: unknown warning group '-Wcast-function-type', ignored [-Wunknown-warning-option]
+XML_IGNORE_FPTR_CAST_WARNINGS
+^
+./include/libxml/xmlversion.h:456:7: note: expanded from macro 'XML_IGNORE_FPTR_CAST_WARNINGS'
+      _Pragma("GCC diagnostic ignored \"-Wcast-function-type\"")
+      ^
+<scratch space>:108:25: note: expanded from here
+ GCC diagnostic ignored "-Wcast-function-type"
+                        ^
+2 warnings generated.
+  CC       libxml2_la-xlink.lo
+  CC       libxml2_la-xpointer.lo
+  CCLD     libxml2.la
+  CCLD     xmllint
+  CC       xmlcatalog-xmlcatalog.o
+  CCLD     xmlcatalog
+  CC       testdso.lo
+  CCLD     testdso.la
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7'
+Making all in doc
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc'
+Making all in .
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc'
+Making all in devhelp
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc/devhelp'
+Making all in examples
+make[3]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc/examples'
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/doc'
+Making all in example
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/example'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/example'
+Making all in xstc
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/xstc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/xstc'
+Making all in fuzz
+make[2]: Entering directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7/fuzz'
+make[1]: Leaving directory '/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ext/nokogiri/tmp/x86_64-pc-linux/ports/libxml2/2.12.7/libxml2-2.12.7'

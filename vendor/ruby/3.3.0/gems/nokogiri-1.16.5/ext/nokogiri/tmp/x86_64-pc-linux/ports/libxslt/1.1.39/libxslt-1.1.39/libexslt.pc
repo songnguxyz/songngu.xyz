@@ -1,0 +1,13 @@
+prefix=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39
+exec_prefix=${prefix}
+libdir=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxslt/1.1.39/lib
+includedir=${prefix}/include
+
+
+Name: libexslt
+Version: 0.8.21
+Description: EXSLT Extension library
+Requires: libxml-2.0, libxslt
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lexslt
+Libs.private: -lm 

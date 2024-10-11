@@ -1,0 +1,12 @@
+prefix=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7
+exec_prefix=${prefix}
+libdir=/workspaces/projects.songngu.xyz/vendor/ruby/3.3.0/gems/nokogiri-1.16.5/ports/x86_64-linux/libxml2/2.12.7/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.12.7
+Description: libXML library version2.
+Requires:  zlib liblzma
+Libs: -L${libdir} -lxml2     -lm  
+Cflags: -I${includedir}/libxml2 
