@@ -132,6 +132,10 @@ header {
   background-image: url('../images/WALTP.png');
 }
 
+#project-waltp:hover .logo {
+  background-image: url('../images/ALTP20.png');
+}
+
 #project-wcg {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 100%), url('../images/Banner-WCG.png');
 }
