@@ -130,10 +130,14 @@ header {
 
 #project-waltp .logo {
   background-image: url('../images/WALTP.png');
+  opacity: 1;
+  transition: .5s ease-in;
 }
 
 #project-waltp:hover .logo {
   background-image: url('../images/ALTP20.png');
+  opacity: 1;
+  transition: .5s ease-out;
 }
 
 #project-wcg {
