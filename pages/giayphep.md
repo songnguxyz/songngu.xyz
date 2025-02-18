@@ -1,15 +1,12 @@
 ---
 layout: default
-title: Licensing
-description: Information about licensing content from sites on the Weird Gloop network.
+title: Quyền sử dụng nội dung
+description: Thông tin về việc cấp phép nội dung từ các trang web được Song Ngư quản lý.
 permalink: /giayphep/
 ---
 
-# Licensing
-For information about licensing on our wiki sites, see [this page](https://meta.weirdgloop.org/w/Project:Copyrights) on our meta wiki.
+# Giấy phép
+Tất cả các wiki được quản lý bởi SongNgư.xyz đều được phát hành dưới giấy phép CC BY-SA 4.0, trừ khi có ghi chú khác tại trang.
 
-### Source code
-The source code for some of our sites, extensions, and tools, are publicly accessible on [GitHub](https://github.com/weirdgloop). For the majority of our repositories, the code is licensed under [GNU General Public License v2](https://choosealicense.com/licenses/gpl-2.0/) or later, however some projects may have a different license or no license at all. Please check for a `COPYING` or `LICENSE` file, or information in the `README` file, for information. If license information cannot be found in any of those, the project doesn't have a license and will be subject to our copyright.
-
-### Maps
-We host a map server at <code>maps.runescape.wiki</code> for displaying interactive maps on the RuneScape and Old School RuneScape wikis. The map's underlying code is subject to our licensing, under the [GNU General Public License v3](https://choosealicense.com/licenses/gpl-3.0/), and utilises [Leaflet](https://github.com/Leaflet/Leaflet).
+## Mã nguồn
+Kho mã nguồn của dự án Wiki Lớp Học Mật Ngữ có thể được truy cập tại [GitHub](https://github.com/wikilophocmatngu). Trong đa số các kho này, chúng được phát hành dưới giấy phép [Công cộng GNU v2](https://choosealicense.com/licenses/gpl-2.0/) hoặc mới hơn, tuy nhiên một số dự án có thể có giấy phép khác hoặc không có giấy phép nào cả. Vui lòng kiểm tra tệp `COPYING` hoặc `LICENSE` hoặc thông tin trong tệp `README` để biết thông tin. Nếu không tìm thấy thông tin giấy phép trong bất kỳ tệp nào trong số đó, dự án không có giấy phép và sẽ tuân theo bản quyền của Song Ngư.
