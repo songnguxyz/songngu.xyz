@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BỘ MÀU TỪ MOODBOARD MEDIAWIKI XP */
+  --color-mxp-pink: #d81b60;   /* Hồng đậm */
+  --color-mxp-purple: #8e24aa; /* Tím */
+  --color-mxp-blue: #7986cb;   /* Xanh lơ (Periwinkle) */
+  --color-mxp-teal: #26a69a;   /* Xanh cổ vịt (Teal) */
+  --color-mxp-mint: #a5d6a7;   /* Xanh bạc hà (Mint) */
+  
+  /* Ghi đè màu primary mặc định thành màu Hồng của MXP */
+  --color-primary: var(--color-mxp-pink);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
