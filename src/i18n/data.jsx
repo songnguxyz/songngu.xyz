@@ -32,15 +32,15 @@ export const translations = {
         url: "https://lophocmatngu.wiki",
         description:
           "Bách khoa toàn thư và không gian lưu trữ thông tin chi tiết về vũ trụ truyện tranh Lớp Học Mật Ngữ do tôi vận hành.",
-        logoUrl: "/src/assets/WLHMN.svg",
+        logoUrl: "/WLHMN.svg",
         badges: [
           {
-            iconUrl: "/src/assets/iwf.svg",
+            iconUrl: "/iwf.svg",
             title: "Thành viên IWF",
             inverted: false,
           },
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Lưu trữ bởi Miraheze",
             inverted: false,
           },
@@ -59,10 +59,10 @@ export const translations = {
         url: "https://twitter.com/CRWiki",
         description:
           "Nền tảng tri thức độc lập, toàn diện và tối ưu hóa trải nghiệm dành cho cộng đồng người chơi Cookie Run. Sắp mở cửa.",
-        logoUrl: "/src/assets/CRW.png",
+        logoUrl: "/CRW.png",
         badges: [
           {
-            iconUrl: "/src/assets/abxy.svg",
+            iconUrl: "/abxy.svg",
             title: "Lưu trữ bởi ABXY",
             inverted: true,
           },
@@ -81,10 +81,10 @@ export const translations = {
         url: "https://cg.songngu.xyz",
         description:
           "Dự án ghi chép và lưu trữ thông tin về vũ trụ Gameshow và các chương trình truyền hình mô phỏng.",
-        logoUrl: "/src/assets/WCG.png",
+        logoUrl: "/WCG.png",
         badges: [
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Lưu trữ bởi Miraheze",
             inverted: false,
           },
@@ -97,10 +97,10 @@ export const translations = {
         url: "https://100bangai.songngu.xyz",
         description:
           "Dự án bách khoa toàn thư tiếng Việt lưu trữ thông tin về vũ trụ truyện tranh và anime 100 Cô Bạn Gái.",
-        logoUrl: "/src/assets/W100.svg",
+        logoUrl: "/W100.svg",
         badges: [
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Lưu trữ bởi Miraheze",
             inverted: false,
           },
@@ -117,16 +117,16 @@ export const translations = {
       {
         id: "miraheze",
         name: "Miraheze",
-        logoUrl: "/src/assets/miraheze.svg",
+        logoUrl: "/miraheze.svg",
         description:
-          "Nền tảng wiki mã nguồn mở phi lợi nhuận. Nơi lưu trữ Custom Gameshows Wiki cùng nhiều dự án cộng đồng khác.",
+          "Nền tảng wiki mã nguồn mở phi lợi nhuận. Nơi lưu trữ Wiki Lớp Học Mật Ngữ cùng nhiều dự án cộng đồng khác.",
         bgClass:
           "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "wikioasis",
         name: "WikiOasis",
-        logoUrl: "/src/assets/wikioasis.png",
+        logoUrl: "/wikioasis.png",
         description:
           "Hệ sinh thái wiki mở và linh hoạt. Môi trường tuyệt vời để phát triển, quản lý và tùy biến các wiki quy ngắn và nhỏ.",
         bgClass:
@@ -135,7 +135,7 @@ export const translations = {
       {
         id: "abxy",
         name: "ABXY (StrategyWiki)",
-        logoUrl: "/src/assets/abxy.svg",
+        logoUrl: "/abxy.svg",
         description:
           "Hạ tầng máy chủ độc lập và phi thương mại. Đối tác cung cấp giải pháp hosting tự do cho Cookie Run Wiki.",
         bgClass:
@@ -144,7 +144,7 @@ export const translations = {
       {
         id: "iwf",
         name: "Independent Wiki Federation",
-        logoUrl: "/src/assets/iwf.svg",
+        logoUrl: "/iwf.svg",
         url: "https://indiewikifederation.org",
         description:
           "Liên minh bảo vệ và thúc đẩy các wiki độc lập, thoát khỏi sự kiểm soát của các farm wiki thương mại, mang lại trải nghiệm tốt nhất cho người dùng.",
@@ -177,15 +177,15 @@ export const translations = {
         url: "https://lophocmatngu.wiki",
         description:
           "The encyclopedia and comprehensive storage space for the Lớp Học Mật Ngữ comic universe, operated by me.",
-        logoUrl: "/src/assets/WLHMN.svg",
+        logoUrl: "/WLHMN.svg",
         badges: [
           {
-            iconUrl: "/src/assets/iwf.svg",
+            iconUrl: "/iwf.svg",
             title: "IWF Member",
             inverted: false,
           },
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Hosted by Miraheze",
             inverted: false,
           },
@@ -204,10 +204,10 @@ export const translations = {
         url: "https://twitter.com/CRWiki",
         description:
           "An independent, comprehensive knowledge platform optimized for the Cookie Run player community.",
-        logoUrl: "/src/assets/CRW.png",
+        logoUrl: "/CRW.png",
         badges: [
           {
-            iconUrl: "/src/assets/abxy.svg",
+            iconUrl: "/abxy.svg",
             title: "Hosted by ABXY",
             inverted: true,
           },
@@ -226,10 +226,10 @@ export const translations = {
         url: "https://cg.songngu.xyz",
         description:
           "A project to document and archive information about the simulated Gameshow universe and television programs.",
-        logoUrl: "/src/assets/WCG.png",
+        logoUrl: "/WCG.png",
         badges: [
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Hosted by Miraheze",
             inverted: false,
           },
@@ -242,10 +242,10 @@ export const translations = {
         url: "https://100bangai.songngu.xyz",
         description:
           "The Vietnamese encyclopedia project archiving information about the 100 Girlfriends manga and anime universe.",
-        logoUrl: "/src/assets/W100.svg",
+        logoUrl: "/W100.svg",
         badges: [
           {
-            iconUrl: "/src/assets/miraheze.svg",
+            iconUrl: "/miraheze.svg",
             title: "Hosted by Miraheze",
             inverted: false,
           },
@@ -262,7 +262,7 @@ export const translations = {
       {
         id: "miraheze",
         name: "Miraheze",
-        logoUrl: "/src/assets/miraheze.svg",
+        logoUrl: "/miraheze.svg",
         description:
           "A non-profit open-source wiki hosting platform. Home to Custom Gameshows Wiki and other community projects.",
         bgClass:
@@ -271,7 +271,7 @@ export const translations = {
       {
         id: "wikioasis",
         name: "WikiOasis",
-        logoUrl: "/src/assets/wikioasis.png",
+        logoUrl: "/wikioasis.png",
         description:
           "An open and flexible wiki ecosystem. A great environment to develop, manage, and customize small to medium wikis.",
         bgClass:
@@ -280,7 +280,7 @@ export const translations = {
       {
         id: "abxy",
         name: "ABXY (StrategyWiki)",
-        logoUrl: "/src/assets/abxy.svg",
+        logoUrl: "/abxy.svg",
         description:
           "Independent and non-commercial server infrastructure. Providing free hosting solutions for Cookie Run Wiki.",
         bgClass:
@@ -289,7 +289,7 @@ export const translations = {
       {
         id: "iwf",
         name: "Independent Wiki Federation",
-        logoUrl: "/src/assets/iwf.svg",
+        logoUrl: "/iwf.svg",
         url: "https://indiewikifederation.org",
         description:
           "An alliance protecting and promoting independent wikis, free from commercial wiki farm control, delivering the best user experience.",

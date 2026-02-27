@@ -27,12 +27,12 @@ function App() {
             <a href="#" className="-m-1.5 p-1.5 flex items-center gap-2">
               <span className="sr-only">SongNgư.xyz</span>
               <img
-                src="/src/assets/logo.svg"
+                src="/logo.svg"
                 alt="SongNgư.xyz Logo"
                 className="h-8 w-auto transition-all"
               />
               <img
-                src="/src/assets/wordmark.svg"
+                src="/wordmark.svg"
                 alt="SongNgư.xyz Wordmark"
                 className="h-5 w-auto block dark:invert transition-all"
               />
