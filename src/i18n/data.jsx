@@ -4,6 +4,7 @@ import {
   SiDiscord,
   SiGithub,
   SiGmail,
+  SiYouTube
 } from "@icons-pack/react-simple-icons";
 import { TwitterClassic, BookIcon } from "./index";
 
@@ -31,7 +32,7 @@ export const translations = {
         name: "Wiki Lớp Học Mật Ngữ",
         url: "https://lophocmatngu.wiki",
         description:
-          "Bách khoa toàn thư và không gian lưu trữ thông tin chi tiết về vũ trụ truyện tranh Lớp Học Mật Ngữ do tôi vận hành.",
+          "Bách khoa toàn thư và không gian lưu trữ thông tin chi tiết về vũ trụ truyện tranh Lớp Học Mật Ngữ.",
         logoUrl: "/WLHMN.svg",
         badges: [
           {
@@ -51,6 +52,10 @@ export const translations = {
             icon: <SiFacebook className="w-5 h-5" />,
             url: "https://facebook.com/wikilophocmatngu",
           },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://go.lophocmatngu.wiki/discord",
+          },
         ],
       },
       {
@@ -68,7 +73,7 @@ export const translations = {
           },
         ],
         links: [
-          { icon: <BookIcon />, url: "https://twitter.com/CRWiki" },
+          { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
           {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
@@ -89,7 +94,21 @@ export const translations = {
             inverted: false,
           },
         ],
-        links: [{ icon: <BookIcon />, url: "https://cg.songngu.xyz" }],
+        links: [
+          { icon: <BookIcon />, url: "https://cg.songngu.xyz" },
+          {
+            icon: <SiYouTube className="w-6 h-5" />,
+            url: "https://youtube.com/@CustomGameshows",
+          },
+          {
+            icon: <SiFacebook className="w-5 h-5" />,
+            url: "https://facebook.com/customgameshows",
+          },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://discord.gg/eqwvCQphhn",
+          },
+        ],
       },
       {
         id: 4,
@@ -109,6 +128,10 @@ export const translations = {
           {
             icon: <BookIcon />,
             url: "https://100bangai.songngu.xyz",
+          },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://discord.gg/ykFWjNUgaQ",
           },
         ],
       },
@@ -176,7 +199,7 @@ export const translations = {
         name: "Wiki Lớp Học Mật Ngữ",
         url: "https://lophocmatngu.wiki",
         description:
-          "The encyclopedia and comprehensive storage space for the Lớp Học Mật Ngữ comic universe, operated by me.",
+          "The encyclopedia and comprehensive storage space for the Lớp Học Mật Ngữ (Zodiac Classsroom) comic universe.",
         logoUrl: "/WLHMN.svg",
         badges: [
           {
@@ -196,6 +219,10 @@ export const translations = {
             icon: <SiFacebook className="w-5 h-5" />,
             url: "https://facebook.com/wikilophocmatngu",
           },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://go.lophocmatngu.wiki/discord",
+          },
         ],
       },
       {
@@ -213,7 +240,7 @@ export const translations = {
           },
         ],
         links: [
-          { icon: <BookIcon />, url: "https://twitter.com/CRWiki" },
+          { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
           {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
@@ -234,14 +261,28 @@ export const translations = {
             inverted: false,
           },
         ],
-        links: [{ icon: <BookIcon />, url: "https://cg.songngu.xyz" }],
+        links: [
+          { icon: <BookIcon />, url: "https://cg.songngu.xyz" },
+          {
+            icon: <SiYouTube className="w-6 h-5" />,
+            url: "https://youtube.com/@CustomGameshows",
+          },
+          {
+            icon: <SiFacebook className="w-5 h-5" />,
+            url: "https://facebook.com/customgameshows",
+          },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://discord.gg/eqwvCQphhn",
+          },
+        ],
       },
       {
         id: 4,
-        name: "Wiki 100 Bạn Gái tiếng Việt",
+        name: "Vietnamese 100 Kanojo Wiki",
         url: "https://100bangai.songngu.xyz",
         description:
-          "The Vietnamese encyclopedia project archiving information about the 100 Girlfriends manga and anime universe.",
+          "The Vietnamese encyclopedia project archiving information about the 100 Kanojo manga and anime universe.",
         logoUrl: "/W100.svg",
         badges: [
           {
@@ -254,6 +295,10 @@ export const translations = {
           {
             icon: <BookIcon />,
             url: "https://100bangai.songngu.xyz",
+          },
+          {
+            icon: <SiDiscord className="w-5 h-5" />,
+            url: "https://discord.gg/ykFWjNUgaQ",
           },
         ],
       },
@@ -301,11 +346,7 @@ export const translations = {
 };
 
 export const socialLinks = [
-  {
-    name: "Facebook",
-    href: "https://facebook.com/songnguxyz",
-    icon: SiFacebook,
-  },
+  { name: "Facebook", href: "https://facebook.com/songnguxyz", icon: SiFacebook },
   {
     name: "Twitter",
     href: "https://twitter.com/songnguxyz",
