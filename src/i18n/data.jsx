@@ -4,7 +4,7 @@ import {
   SiDiscord,
   SiGithub,
   SiGmail,
-  SiYouTube
+  SiYoutube
 } from "@icons-pack/react-simple-icons";
 import { TwitterClassic, BookIcon } from "./index";
 
