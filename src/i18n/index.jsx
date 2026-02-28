@@ -4,6 +4,7 @@ import {
   SiDiscord,
   SiGithub,
   SiGmail,
+  SiYouTube
 } from "@icons-pack/react-simple-icons";
 
 // SVG chim xanh cổ điển của Twitter
