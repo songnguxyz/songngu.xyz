@@ -2,8 +2,24 @@ import React, { useState, useEffect } from "react";
 import { translations, socialLinks } from "./i18n/data";
 
 function App() {
-  const [lang, setLang] = useState("vi");
-  const [darkMode, setDarkMode] = useState(false);
+  const [lang, setLang] = useState(() => {
+    const saved = localStorage.getItem("lang");
+    if (saved) return saved;
+    const userLang =
+      typeof window !== "undefined" &&
+      (navigator.language || navigator.userLanguage);
+    return userLang && userLang.toLowerCase().startsWith("vi") ? "vi" : "en";
+  });
+
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    if (saved !== null) return JSON.parse(saved);
+    return (
+      typeof window !== "undefined" &&
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+  });
 
   useEffect(() => {
     if (darkMode) {
@@ -11,7 +27,12 @@ function App() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   const t = translations[lang];
 
