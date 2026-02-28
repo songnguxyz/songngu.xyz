@@ -97,7 +97,7 @@ export const translations = {
         links: [
           { icon: <BookIcon />, url: "https://cg.songngu.xyz" },
           {
-            icon: <SiYouTube className="w-6 h-5" />,
+            icon: <SiYoutube className="w-6 h-5" />,
             url: "https://youtube.com/@CustomGameshows",
           },
           {
@@ -264,7 +264,7 @@ export const translations = {
         links: [
           { icon: <BookIcon />, url: "https://cg.songngu.xyz" },
           {
-            icon: <SiYouTube className="w-6 h-5" />,
+            icon: <SiYoutube className="w-6 h-5" />,
             url: "https://youtube.com/@CustomGameshows",
           },
           {
