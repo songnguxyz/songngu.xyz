@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#120a23] flex flex-col transition-colors duration-500">
       {/* NAVBAR */}
-      <header className="fixed inset-x-0 top-0 z-50 bg-slate-50/70 dark:bg-[#120a23]/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 transition-colors duration-500 font-inter">
+      <header className="fixed top-4 left-4 right-4 z-50 rounded-2xl bg-white/80 dark:bg-[#120a23]/80 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 transition-colors duration-500 font-inter">
         <nav
           className="flex items-center justify-between p-4 lg:px-8"
           aria-label="Global"
