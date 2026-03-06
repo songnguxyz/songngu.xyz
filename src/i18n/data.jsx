@@ -25,6 +25,12 @@ export const translations = {
     netDesc:
       "Tôi hoạt động trên nhiều nền tảng lưu trữ mở và tự hào là một phần của phong trào wiki độc lập toàn cầu.",
     learnMore: "Tìm hiểu thêm",
+    navLicenses: "Giấy phép",
+    navContact: "Liên hệ",
+    licenseTitle: "Giấy Phép & Bản Quyền",
+    licenseDesc: "Thông tin về giấy phép mã nguồn mở và bản quyền nội dung.",
+    contactTitle: "Liên Hệ",
+    contactDesc: "Mọi thắc mắc hoặc yêu cầu hợp tác, vui lòng liên hệ qua các kênh dưới đây.",
 
     projectsData: [
       {
@@ -192,6 +198,12 @@ export const translations = {
     netDesc:
       "Operating on multiple open hosting platforms and proud to be part of the global independent wiki movement.",
     learnMore: "Learn more",
+    navLicenses: "Licenses",
+    navContact: "Contact",
+    licenseTitle: "Licenses & Copyright",
+    licenseDesc: "Information about open source licenses and content copyright.",
+    contactTitle: "Contact Us",
+    contactDesc: "For any inquiries or partnership requests, please contact us via the channels below.",
 
     projectsData: [
       {
