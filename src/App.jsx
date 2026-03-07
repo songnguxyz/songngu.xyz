@@ -86,7 +86,7 @@ function App() {
             <div className="flex items-center gap-3 md:border-l md:border-slate-300 dark:md:border-slate-700 md:pl-6 transition-colors duration-500">
               <button
                 onClick={() => setLang(lang === "vi" ? "en" : "vi")}
-                className="text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors block shrink-0"
+                className="hidden md:block text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors shrink-0"
                 aria-label="Toggle Language"
               >
                 {lang === "vi" ? "EN" : "VI"}
@@ -94,7 +94,7 @@ function App() {
 
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className="text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors p-1"
+                className="hidden md:block text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors p-1"
                 aria-label="Toggle Dark Mode"
               >
                 {darkMode ? (
@@ -165,6 +165,58 @@ function App() {
             <Link to="/lienhe" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-semibold text-slate-900 dark:text-white hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50">
               {t.navContact}
             </Link>
+
+            <div className="flex items-center gap-4 border-t border-slate-200 dark:border-slate-700/50 pt-4 mt-2">
+              <button
+                onClick={() => {
+                  setLang(lang === "vi" ? "en" : "vi");
+                  setIsMobileMenuOpen(false);
+                }}
+                className="flex-1 flex justify-center text-sm font-bold text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50"
+                aria-label="Toggle Language"
+              >
+                {lang === "vi" ? "Ngôn ngữ (EN)" : "Language (VI)"}
+              </button>
+
+              <button
+                onClick={() => {
+                  setDarkMode(!darkMode);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="flex-1 flex justify-center text-slate-600 dark:text-slate-300 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50"
+                aria-label="Toggle Dark Mode"
+              >
+                {darkMode ? (
+                  <svg
+                    className="w-5 h-5 inline-block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-5 h-5 inline-block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
           </div>
         )}
       </header>
