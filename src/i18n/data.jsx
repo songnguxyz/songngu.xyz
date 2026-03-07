@@ -27,9 +27,9 @@ export const translations = {
     learnMore: "Tìm hiểu thêm",
     navLicenses: "Giấy phép",
     navContact: "Liên hệ",
-    licenseTitle: "Giấy Phép & Bản Quyền",
+    licenseTitle: "Giấy phép & Bản quyền",
     licenseDesc: "Thông tin về giấy phép mã nguồn mở và bản quyền nội dung.",
-    contactTitle: "Liên Hệ",
+    contactTitle: "Liên hệ",
     contactDesc: "Mọi thắc mắc hoặc yêu cầu hợp tác, vui lòng liên hệ qua các kênh dưới đây.",
 
     projectsData: [
