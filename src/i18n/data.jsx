@@ -81,6 +81,10 @@ export const translations = {
         links: [
           { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
           {
+            icon: <SiFacebook className="w-5 h-5" />,
+            url: "https://facebook.com/cookierun.wiki",
+          },
+          {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
           },
@@ -253,6 +257,10 @@ export const translations = {
         ],
         links: [
           { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
+          {
+            icon: <SiFacebook className="w-5 h-5" />,
+            url: "https://facebook.com/cookierun.wiki",
+          },
           {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
