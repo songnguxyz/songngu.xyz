@@ -10,12 +10,11 @@ function GiayPhep({ t }) {
         <div className="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 transition-colors duration-500 font-medium pb-12">
           <p className="text-xl mb-8">{t.licenseDesc}</p>
           <div className="p-8 bg-white/60 dark:bg-[#1a0f2e]/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-xl transition-all duration-500">
-             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Bản quyền nội dung</h2>
              <p className="mb-4">
                 Bản quyền các nội dung văn bản gốc và media (nếu có) thuộc về <b>SongNgư.xyz</b>, trừ khi có thông báo khác.<br/>
                 Tất cả tên thương hiệu, logo của đối tác và liên minh thuộc về chủ sở hữu tương ứng.
              </p>
-             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Wiki</h2>
+             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Dự án Wiki</h2>
              <p className="mb-4">
                 Mọi dự án wiki tại <b>SongNgư.xyz</b>, trừ khi có thông báo khác tại dự án, đều sử dụng giấy phép <b>Creative Commons Ghi công - Chia sẻ tương tự (CC BY-SA) 4.0</b>.<br/>
                 Khi bạn đóng góp nội dung vào các dự án wiki của tôi, <b>bạn đồng ý</b> <b>một cách vô điều kiện</b> việc cấp phép nội dung đó theo giấy phép Creative Commons phù hợp với dự án.
