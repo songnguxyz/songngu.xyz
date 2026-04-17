@@ -4,7 +4,9 @@ import {
   SiDiscord,
   SiGithub,
   SiGmail,
-  SiYoutube
+  SiYoutube,
+  SiBluesky,
+  SiKofi
 } from "@icons-pack/react-simple-icons";
 import { TwitterClassic, BookIcon } from "./index";
 
@@ -67,7 +69,7 @@ export const translations = {
       {
         id: 2,
         name: "Cookie Run Wiki",
-        url: "https://twitter.com/CRWiki",
+        url: "https://cookierun.wiki",
         description:
           "Nền tảng tri thức độc lập, toàn diện và tối ưu hóa trải nghiệm dành cho cộng đồng người chơi Cookie Run. Sắp mở cửa.",
         logoUrl: "/CRW.png",
@@ -79,6 +81,7 @@ export const translations = {
           },
         ],
         links: [
+          { icon: <BookIcon />, url: "https://cookierun.wiki" },
           { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
           {
             icon: <SiFacebook className="w-5 h-5" />,
@@ -87,6 +90,14 @@ export const translations = {
           {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
+          },
+          {
+            icon: <SiBluesky className="w-5 h-5" />,
+            url: "https://bsky.app/profile/cookierun.wiki",
+          },
+          {
+            icon: <SiKofi className="w-5 h-5" />,
+            url: "https://ko-fi.com/crwiki",
           },
         ],
       },
@@ -244,7 +255,7 @@ export const translations = {
       {
         id: 2,
         name: "Cookie Run Wiki",
-        url: "https://twitter.com/CRWiki",
+        url: "https://cookierun.wiki",
         description:
           "An independent, comprehensive knowledge platform optimized for the Cookie Run player community.",
         logoUrl: "/CRW.png",
@@ -256,6 +267,7 @@ export const translations = {
           },
         ],
         links: [
+          { icon: <BookIcon />, url: "https://cookierun.wiki" },
           { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
           {
             icon: <SiFacebook className="w-5 h-5" />,
@@ -264,6 +276,14 @@ export const translations = {
           {
             icon: <SiDiscord className="w-5 h-5" />,
             url: "https://discord.gg/D793UdcVCh",
+          },
+          {
+            icon: <SiBluesky className="w-5 h-5" />,
+            url: "https://bsky.app/profile/cookierun.wiki",
+          },
+          {
+            icon: <SiKofi className="w-5 h-5" />,
+            url: "https://ko-fi.com/crwiki",
           },
         ],
       },
