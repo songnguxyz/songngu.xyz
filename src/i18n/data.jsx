@@ -75,6 +75,11 @@ export const translations = {
         logoUrl: "/CRW.png",
         badges: [
           {
+            iconUrl: "/gwn.png",
+            title: "Thành viên Gaming Wiki Network",
+            inverted: true,
+          },
+          {
             iconUrl: "/abxy.svg",
             title: "Lưu trữ bởi ABXY",
             inverted: true,
@@ -260,6 +265,11 @@ export const translations = {
           "An independent, comprehensive knowledge platform optimized for the Cookie Run player community",
         logoUrl: "/CRW.png",
         badges: [
+          {
+            iconUrl: "/gwn.png",
+            title: "Gaming Wiki Network Member",
+            inverted: true,
+          },
           {
             iconUrl: "/abxy.svg",
             title: "Hosted by ABXY",
