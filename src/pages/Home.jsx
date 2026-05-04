@@ -11,37 +11,39 @@ function Home({ t }) {
           <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-mxp-pink via-mxp-blue to-mxp-mint opacity-40 dark:opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75 transition-opacity duration-500"></div>
         </div>
 
-        <div className="mx-auto max-w-5xl w-full flex flex-col justify-center items-start text-left relative z-10">
-          <div className="mb-6 sm:mb-8 flex justify-start">
-            <div className="relative rounded-full px-5 py-2 text-sm leading-6 text-slate-700 dark:text-slate-200 ring-1 ring-slate-900/10 dark:ring-white/20 hover:ring-slate-900/20 dark:hover:ring-white/30 hover:scale-105 shadow-sm bg-white/50 dark:bg-[#1a0f2e]/50 backdrop-blur-md transition-all duration-300 inline-block font-inter">
-              <span className="font-semibold text-mxp-pink dark:text-mxp-mint tracking-wider text-xs uppercase">
-                {t.heroTag}
-              </span>
+        <div className="mx-auto max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8 relative z-10">
+          <div className="flex flex-col justify-center items-start text-left w-full lg:w-1/2">
+
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-mxp-pink via-mxp-purple to-mxp-blue dark:from-mxp-mint dark:via-mxp-blue dark:to-mxp-pink drop-shadow-sm pb-2">
+              {t.heroTag}
+            </h1>
+            <p className="mt-2 text-lg md:text-xl leading-8 text-slate-600 dark:text-slate-300 max-w-2xl transition-colors duration-500 font-normal">
+              {t.heroDesc}
+            </p>
+            <div className="mt-8 flex items-center justify-start gap-x-6">
+              <a
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20"
+              >
+                {t.heroBtn}
+              </a>
             </div>
           </div>
-
-          <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-7xl drop-shadow-sm transition-colors duration-500">
-            {t.heroTitle1} <br className="hidden lg:block" />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-mxp-pink via-mxp-purple to-mxp-blue dark:from-mxp-mint dark:via-mxp-blue dark:to-mxp-pink drop-shadow-sm">
-              {t.heroTitle2}
-            </span>
-          </h1>
-          <p className="mt-8 text-xl leading-8 text-slate-600 dark:text-slate-300 max-w-2xl transition-colors duration-500 font-medium">
-            {t.heroDesc}
-          </p>
-          <div className="mt-12 flex items-center justify-start gap-x-6">
-            <a
-              href="#projects"
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20"
-            >
-              {t.heroBtn}
-            </a>
+          
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <img 
+              src="/hero.gif" 
+              alt="Hero Animation" 
+              draggable="false"
+              onContextMenu={(e) => e.preventDefault()}
+              className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 select-none" 
+            />
           </div>
         </div>
       </main>
