@@ -3,12 +3,15 @@ import React from "react";
 function Home({ t }) {
   return (
     <>
-      <main className="grow flex items-center justify-center relative isolate px-6 pt-20 pb-10 min-h-screen">
+      <main
+        id="noi-dung-chinh"
+        className="grow flex items-center justify-center relative isolate px-6 pt-32 pb-16 min-h-screen"
+      >
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
-          <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-mxp-pink via-mxp-blue to-mxp-mint opacity-40 dark:opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75 transition-opacity duration-500"></div>
+          <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-mxp-pink via-mxp-blue to-mxp-mint opacity-40 dark:opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75 transition-opacity duration-200"></div>
         </div>
 
         <div className="mx-auto max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8 relative z-10">
@@ -17,19 +20,13 @@ function Home({ t }) {
             <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-mxp-pink via-mxp-purple to-mxp-blue dark:from-mxp-mint dark:via-mxp-blue dark:to-mxp-pink drop-shadow-sm pb-2">
               {t.heroTag}
             </h1>
-            <p className="mt-2 text-lg md:text-xl leading-8 text-slate-600 dark:text-slate-300 max-w-2xl transition-colors duration-500 font-normal">
+            <p className="mt-2 text-lg md:text-xl leading-8 text-slate-600 dark:text-slate-300 max-w-2xl transition-colors duration-200 font-normal">
               {t.heroDesc}
             </p>
             <div className="mt-8 flex items-center justify-start gap-x-6">
               <a
                 href="#projects"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("projects")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20"
+                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint focus-visible:ring-offset-2 ring-offset-slate-50 dark:ring-offset-[#120a23]"
               >
                 {t.heroBtn}
               </a>
@@ -38,8 +35,10 @@ function Home({ t }) {
           
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <img 
-              src="/hero.gif" 
-              alt="Hero Animation" 
+              src="/hero.gif"
+              alt=""
+              width="1400"
+              height="1400"
               draggable="false"
               onContextMenu={(e) => e.preventDefault()}
               className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 select-none" 
@@ -49,32 +48,33 @@ function Home({ t }) {
       </main>
 
       <section
-        className="py-14 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
+        className="py-14 scroll-mt-28 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
         id="projects"
       >
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="mb-8">
-            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white transition-colors duration-500">
+            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white transition-colors duration-200">
               {t.projTitle}
             </h2>
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 transition-colors duration-500">
+            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 transition-colors duration-200">
               {t.projDesc}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 transition-colors duration-500">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 transition-colors duration-200">
             {t.projectsData.map((project) => (
               <div
                 key={project.id}
-                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-[#1a0f2e]/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-500 overflow-hidden"
+                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-[#1a0f2e]/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-200 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-linear-to-br from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
 
                 {project.badges && project.badges.length > 0 && (
                   <div className="absolute top-6 right-6 flex items-center gap-2 z-10">
                     {project.badges.map((badge, index) => (
                       <button
                         key={index}
+                        type="button"
                         className="group/badge relative h-8 px-3 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 transition-all cursor-help before:absolute before:-inset-2 before:content-['']"
                         aria-label={badge.title}
                       >
@@ -83,7 +83,7 @@ function Home({ t }) {
                           alt=""
                           className={`w-4 h-4 object-contain shrink-0 ${badge.inverted ? "invert dark:invert-0 opacity-80 dark:opacity-100" : ""}`}
                         />
-                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 whitespace-nowrap overflow-hidden transition-all duration-300 max-w-0 opacity-0 md:group-hover/badge:max-w-xs md:group-hover/badge:ml-2 md:group-hover/badge:opacity-100 md:group-focus/badge:max-w-xs md:group-focus/badge:ml-2 md:group-focus/badge:opacity-100">
+                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 whitespace-nowrap overflow-hidden transition-all duration-300 max-w-0 opacity-0 md:group-hover/badge:max-w-xs md:group-hover/badge:ml-2 md:group-hover/badge:opacity-100 group-focus/badge:max-w-xs group-focus/badge:ml-2 group-focus/badge:opacity-100">
                           {badge.title}
                         </span>
                       </button>
@@ -105,21 +105,21 @@ function Home({ t }) {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline decoration-2 underline-offset-4"
+                      className="hover:underline decoration-2 underline-offset-4 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
                     >
                       {project.name}
                     </a>
                   </h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed transition-colors duration-500">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed transition-colors duration-200">
                     {project.description}
                   </p>
-                  <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 transition-colors duration-500 mt-auto">
+                  <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 transition-colors duration-200 mt-auto">
                     {project.links.map((link, index) => (
                       <a
                         key={index}
                         href={link.url}
                         title={link.title}
-                        className="group-hover:text-mxp-pink dark:group-hover:text-mxp-mint dark:hover:text-blue-400 hover:bg-slate-200 dark:hover:bg-slate-700 p-1.5 rounded-md transition-colors flex items-center"
+                        className="hover:text-mxp-pink dark:hover:text-mxp-mint hover:bg-slate-200 dark:hover:bg-slate-700 p-1.5 rounded-md transition-colors flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -135,7 +135,7 @@ function Home({ t }) {
       </section>
 
       <section
-        className="py-14 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
+        className="py-14 scroll-mt-28 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
         id="affiliations"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -143,10 +143,10 @@ function Home({ t }) {
             <h2 className="text-base font-bold tracking-widest uppercase text-mxp-pink dark:text-mxp-mint">
               {t.netSub}
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white transition-colors duration-500">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white transition-colors duration-200">
               {t.netTitle}
             </p>
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 transition-colors duration-500">
+            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 transition-colors duration-200">
               {t.netDesc}
             </p>
           </div>
@@ -155,7 +155,7 @@ function Home({ t }) {
             {t.affiliationsData.map((partner) => (
               <div
                 key={partner.id}
-                className={`rounded-3xl p-8 backdrop-blur-md border shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 group ${
+                className={`relative overflow-hidden rounded-3xl p-8 backdrop-blur-md border shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 group ${
                   partner.id === "iwf"
                     ? "md:col-span-3 flex flex-col md:flex-row items-center justify-center gap-8 md:text-left text-center bg-linear-to-br from-[#1c355e] to-[#0f1f38] border-blue-800/50"
                     : "text-center bg-white/70 dark:bg-slate-800/70 border-white dark:border-slate-700/50"
@@ -171,7 +171,7 @@ function Home({ t }) {
                   <img
                     src={partner.logoUrl}
                     alt={partner.name}
-                    className={`h-full w-auto object-contain drop-shadow-md transition-all duration-500 ${partner.id === "iwf" ? "drop-shadow-2xl" : partner.id === "abxy" ? "invert dark:invert-0 dark:opacity-90 opacity-80" : "dark:opacity-90"}`}
+                    className={`h-full w-auto object-contain drop-shadow-md transition-all duration-200 ${partner.id === "iwf" ? "drop-shadow-2xl" : partner.id === "abxy" ? "invert dark:invert-0 dark:opacity-90 opacity-80" : "dark:opacity-90"}`}
                   />
                 </div>
 
@@ -186,7 +186,7 @@ function Home({ t }) {
                     {partner.name}
                   </h4>
                   <p
-                    className={`text-sm transition-colors duration-500 ${partner.id === "iwf" ? "text-blue-100 relative z-10" : "text-slate-600 dark:text-slate-300"}`}
+                    className={`text-sm transition-colors duration-200 ${partner.id === "iwf" ? "text-blue-100 relative z-10" : "text-slate-600 dark:text-slate-300"}`}
                   >
                     {partner.description}
                   </p>
@@ -196,7 +196,7 @@ function Home({ t }) {
                       href={partner.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 inline-block rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-400/30 px-6 py-2.5 text-sm font-bold text-blue-100 hover:bg-blue-600/40 hover:text-white hover:scale-105 hover:shadow-lg transition-all relative z-10"
+                      className="mt-6 inline-block rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-400/30 px-6 py-2.5 text-sm font-bold text-blue-100 hover:bg-blue-600/40 hover:text-white hover:scale-105 hover:shadow-lg transition-all relative z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-200"
                     >
                       {t.learnMore}
                     </a>

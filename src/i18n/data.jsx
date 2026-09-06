@@ -12,6 +12,7 @@ import { TwitterClassic, BookIcon, MailIcon } from "./index";
 
 export const translations = {
   vi: {
+    navHome: "Trang chủ",
     navProjects: "Meta-Wiki",
     heroTag: "Cùng kết nối ước mơ của bạn",
     heroTitle1: "Chia sẻ tri thức",
@@ -35,6 +36,15 @@ export const translations = {
     contactDesc: "Mọi thắc mắc hoặc yêu cầu hợp tác, vui lòng liên hệ qua các kênh dưới đây",
     wikiContactTitle: "Liên hệ khác",
     wikiContactDesc: "Một số wiki có địa chỉ liên hệ riêng dành cho nội dung và cộng đồng của dự án đó",
+    skipToContent: "Chuyển tới nội dung chính",
+    langToggleLabel: "Chuyển ngôn ngữ",
+    themeToDark: "Chuyển sang giao diện tối",
+    themeToLight: "Chuyển sang giao diện sáng",
+    menuToggleLabel: "Mở/đóng menu",
+    notFoundTitle: "Không tìm thấy trang",
+    notFoundDesc:
+      "Trang bạn tìm không tồn tại hoặc đã được chuyển sang địa chỉ khác.",
+    notFoundBtn: "Về trang chủ",
 
     projectsData: [
       {
@@ -161,8 +171,6 @@ export const translations = {
         logoUrl: "/miraheze.svg",
         description:
           "Nền tảng wiki mã nguồn mở phi lợi nhuận lâu đời, hiện lưu trữ Wiki Lớp Học Mật Ngữ cùng nhiều dự án cộng đồng khác",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "wikioasis",
@@ -170,8 +178,6 @@ export const translations = {
         logoUrl: "/wikioasis.png",
         description:
           "Hệ sinh thái wiki mở và linh hoạt để phát triển, quản lý và tùy biến các wiki quy mô vừa và nhỏ",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "abxy",
@@ -179,8 +185,6 @@ export const translations = {
         logoUrl: "/abxy.svg",
         description:
           "Hạ tầng máy chủ độc lập và phi thương mại và là đối tác cung cấp giải pháp hosting tự do cho Cookie Run Wiki",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "iwf",
@@ -189,12 +193,11 @@ export const translations = {
         url: "https://indiewikifederation.org",
         description:
           "Liên minh bảo vệ và thúc đẩy các wiki độc lập, thoát khỏi sự chi phối của các tập đoàn thương mại, mang lại trải nghiệm tốt nhất cho người dùng",
-        bgClass:
-          "bg-[#1c355e] dark:bg-[#0f1f38] shadow-lg relative overflow-hidden group",
       },
     ],
   },
   en: {
+    navHome: "Home",
     navProjects: "Meta-Wiki",
     heroTag: "Connecting your dreams",
     heroTitle1: "Sharing knowledge",
@@ -217,7 +220,16 @@ export const translations = {
     contactTitle: "Contact",
     contactDesc: "For any inquiries or partnership requests, please contact me via the channels below",
     wikiContactTitle: "Special Contacts",
-    wikiContactDesc: "Some wikis keep their own address for matters specific to that project's content and community",
+    wikiContactDesc: "Certain projects and partners requires specific contact addresses to be used./nPlease uses the info below to contact me on that specific project.",
+    skipToContent: "Skip to main content",
+    langToggleLabel: "Toggle language",
+    themeToDark: "Switch to dark theme",
+    themeToLight: "Switch to light theme",
+    menuToggleLabel: "Toggle menu",
+    notFoundTitle: "Page not found",
+    notFoundDesc:
+      "The page you are looking for does not exist or has moved to another address.",
+    notFoundBtn: "Back to home",
 
     projectsData: [
       {
@@ -231,12 +243,10 @@ export const translations = {
           {
             iconUrl: "/iwf.svg",
             title: "IWF Member",
-            inverted: false,
           },
           {
             iconUrl: "/miraheze.svg",
             title: "Hosted by Miraheze",
-            inverted: false,
           },
         ],
         links: [
@@ -262,12 +272,10 @@ export const translations = {
           {
             iconUrl: "/gwn.png",
             title: "Gaming Wiki Network Member",
-            inverted: true,
           },
           {
             iconUrl: "/iwf.svg",
             title: "IWF Member",
-            inverted: false,
           },
           {
             iconUrl: "/abxy.svg",
@@ -306,8 +314,7 @@ export const translations = {
         badges: [
           {
             iconUrl: "/miraheze.svg",
-            title: "Hosted by Miraheze",
-            inverted: false,
+            title: "Hosted by Miraheze"
           },
         ],
         links: [
@@ -359,8 +366,6 @@ export const translations = {
         logoUrl: "/miraheze.svg",
         description:
           "A non-profit open-source wiki hosting platform home to Custom Gameshows Wiki and other community projects",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "wikioasis",
@@ -368,8 +373,6 @@ export const translations = {
         logoUrl: "/wikioasis.png",
         description:
           "An open and flexible wiki ecosystem for developing, managing, and customizing small to medium wikis",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "abxy",
@@ -377,8 +380,6 @@ export const translations = {
         logoUrl: "/abxy.svg",
         description:
           "Independent and non-commercial server infrastructure providing hosting solutions for Cookie Run Wiki",
-        bgClass:
-          "bg-white dark:bg-slate-800 ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-mxp-pink/50 shadow-sm",
       },
       {
         id: "iwf",
@@ -387,8 +388,6 @@ export const translations = {
         url: "https://indiewikifederation.org",
         description:
           "An alliance protecting and promoting independent wikis, free from commercial wiki farm control, delivering a better user experience",
-        bgClass:
-          "bg-[#1c355e] dark:bg-[#0f1f38] shadow-lg relative overflow-hidden group",
       },
     ],
   },
@@ -417,7 +416,7 @@ export const contactChannels = [
 
 // Địa chỉ liên hệ riêng của từng dự án wiki, ngoài các kênh chung ở trên.
 export const wikiContacts = [
-  { name: "Cookie Run Wiki", url: "https://cookierun.wiki", logoUrl: "/WCRVN.png",
+  { name: "Cookie Run Wiki", url: "https://cookierun.wiki", logoUrl: "/CRW.png",
     emails: [{ addr: "pisces@cookierun.wiki" }] },
   { name: "Wiki Lớp Học Mật Ngữ", url: "https://lophocmatngu.wiki", logoUrl: "/WLHMN.svg",
     emails: [{ addr: "hotro@lophocmatngu.wiki", note: { vi: "Hỗ trợ dự án", en: "Project support" } },

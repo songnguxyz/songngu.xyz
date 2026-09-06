@@ -19,12 +19,15 @@ const ICON_COLOR_CLASSES = {
 
 function LienHe({ t, lang }) {
   return (
-    <main className="grow flex flex-col items-center justify-start relative isolate px-6 pt-24 pb-10 min-h-screen">
+    <main
+      id="noi-dung-chinh"
+      className="grow flex flex-col items-center justify-start relative isolate px-6 pt-32 pb-16"
+    >
       <div className="mx-auto max-w-4xl w-full flex flex-col text-left relative z-10">
-        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl drop-shadow-sm transition-colors duration-500 mb-6">
+        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl drop-shadow-sm transition-colors duration-200 mb-6">
           {t.contactTitle}
         </h1>
-        <div className="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 transition-colors duration-500 font-medium pb-10">
+        <div className="max-w-none text-slate-600 dark:text-slate-300 transition-colors duration-200 font-medium pb-10">
           <p className="text-xl mb-6">{t.contactDesc}</p>
           <div className="grid gap-5 justify-start grid-cols-[repeat(auto-fit,minmax(min(100%,16rem),1fr))]">
             {contactChannels.map((item) => {
@@ -35,7 +38,7 @@ function LienHe({ t, lang }) {
                   href={item.href}
                   target={isMailto ? undefined : "_blank"}
                   rel={isMailto ? undefined : "noopener noreferrer"}
-                  className={`p-8 bg-white/60 dark:bg-[#1a0f2e]/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 transition-all duration-500 flex flex-col items-center text-center group ${VARIANT_CLASSES[item.variant]}`}
+                  className={`p-8 bg-white/60 dark:bg-[#1a0f2e]/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-50 dark:ring-offset-[#120a23] transition-all duration-200 flex flex-col items-center text-center group ${VARIANT_CLASSES[item.variant]}`}
                 >
                   <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <span className={ICON_COLOR_CLASSES[item.variant]}>{item.icon}</span>
@@ -72,7 +75,7 @@ function LienHe({ t, lang }) {
                       href={w.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-bold text-slate-900 dark:text-white"
+                      className="text-lg font-bold text-slate-900 dark:text-white hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
                     >
                       {w.name}
                     </a>
@@ -87,7 +90,7 @@ function LienHe({ t, lang }) {
                         )}
                         <a
                           href={`mailto:${e.addr}`}
-                          className="text-sm text-slate-600 dark:text-slate-300 break-all"
+                          className="text-sm text-slate-600 dark:text-slate-300 break-all hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
                         >
                           {e.addr}
                         </a>
