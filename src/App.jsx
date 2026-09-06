@@ -223,8 +223,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home t={t} />} />
-        <Route path="/giayphep" element={<GiayPhep t={t} />} />
-        <Route path="/lienhe" element={<LienHe t={t} />} />
+        <Route path="/giayphep" element={<GiayPhep t={t} lang={lang} />} />
+        <Route path="/lienhe" element={<LienHe t={t} lang={lang} />} />
       </Routes>
 
       {/* FOOTER */}

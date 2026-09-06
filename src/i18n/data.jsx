@@ -8,7 +8,7 @@ import {
   SiBluesky,
   SiKofi
 } from "@icons-pack/react-simple-icons";
-import { TwitterClassic, BookIcon } from "./index";
+import { TwitterClassic, BookIcon, MailIcon } from "./index";
 
 export const translations = {
   vi: {
@@ -33,6 +33,8 @@ export const translations = {
     licenseDesc: "Thông tin về giấy phép mã nguồn mở và bản quyền nội dung",
     contactTitle: "Liên hệ",
     contactDesc: "Mọi thắc mắc hoặc yêu cầu hợp tác, vui lòng liên hệ qua các kênh dưới đây",
+    wikiContactTitle: "Liên hệ khác",
+    wikiContactDesc: "Một số wiki có địa chỉ liên hệ riêng dành cho nội dung và cộng đồng của dự án đó",
 
     projectsData: [
       {
@@ -68,17 +70,12 @@ export const translations = {
       },
       {
         id: 2,
-        name: "Cookie Run Wiki",
-        url: "https://cookierun.wiki",
+        name: "Wiki Cookie Run tiếng Việt",
+        url: "https://vi.cookierun.wiki",
         description:
           "Nền tảng tri thức độc lập, toàn diện và tối ưu dành cho cộng đồng người chơi Cookie Run",
-        logoUrl: "/CRW.png",
+        logoUrl: "/WCRVN.png",
         badges: [
-          {
-            iconUrl: "/gwn.png",
-            title: "Thành viên Gaming Wiki Network",
-            inverted: true,
-          },
           {
             iconUrl: "/abxy.svg",
             title: "Lưu trữ bởi ABXY",
@@ -86,19 +83,14 @@ export const translations = {
           },
         ],
         links: [
-          { icon: <BookIcon />, url: "https://cookierun.wiki" },
-          { icon: <TwitterClassic />, url: "https://twitter.com/CRWiki" },
+          { icon: <BookIcon />, url: "https://vi.cookierun.wiki" },
           {
             icon: <SiFacebook className="w-5 h-5" />,
-            url: "https://facebook.com/cookierun.wiki",
+            url: "https://facebook.com/vi.cookierun.wiki",
           },
           {
             icon: <SiDiscord className="w-5 h-5" />,
-            url: "https://discord.gg/D793UdcVCh",
-          },
-          {
-            icon: <SiBluesky className="w-5 h-5" />,
-            url: "https://bsky.app/profile/cookierun.wiki",
+            url: "https://discord.gg/HF3yzrj6Kf",
           },
           {
             icon: <SiKofi className="w-5 h-5" />,
@@ -224,6 +216,8 @@ export const translations = {
     licenseDesc: "Information about open source licenses and content copyright",
     contactTitle: "Contact",
     contactDesc: "For any inquiries or partnership requests, please contact me via the channels below",
+    wikiContactTitle: "Special Contacts",
+    wikiContactDesc: "Some wikis keep their own address for matters specific to that project's content and community",
 
     projectsData: [
       {
@@ -269,6 +263,11 @@ export const translations = {
             iconUrl: "/gwn.png",
             title: "Gaming Wiki Network Member",
             inverted: true,
+          },
+          {
+            iconUrl: "/iwf.svg",
+            title: "IWF Member",
+            inverted: false,
           },
           {
             iconUrl: "/abxy.svg",
@@ -404,4 +403,25 @@ export const socialLinks = [
   },
   { name: "GitHub", href: "https://github.com/songnguxyz", icon: SiGithub },
   { name: "Email", href: "mailto:admin@songngu.xyz", icon: SiGmail },
+];
+
+// Kênh liên hệ chung, hiển thị trên trang Liên hệ.
+export const contactChannels = [
+  { label: "Email", handle: "xinchao@songngu.xyz", href: "mailto:xinchao@songngu.xyz", icon: <MailIcon />, variant: "email" },
+  { label: "Twitter", handle: "@songnguxyz", href: "https://twitter.com/songnguxyz", icon: <TwitterClassic className="w-8 h-8" />, variant: "twitter" },
+  { label: "Discord", handle: "@songngu.xyz", href: "https://discord.com/users/663741516971507772", icon: <SiDiscord className="w-8 h-8" />, variant: "discord" },
+  { label: "Facebook", handle: "@songnguchamxyz", href: "https://facebook.com/songnguchamxyz", icon: <SiFacebook className="w-8 h-8" />, variant: "facebook" },
+  { label: "Wikipedia", handle: "Song Ngư", href: "https://meta.wikimedia.org/wiki/User:Song_Ng%C6%B0", icon: <img src="/wikipedia.svg" alt="" className="w-8 h-8 object-contain dark:invert" />, variant: "wikipedia" },
+  { label: "Miraheze", handle: "Pisces", href: "https://meta.miraheze.org/wiki/User:Pisces", icon: <img src="/miraheze.svg" alt="" className="w-8 h-8 object-contain" />, variant: "miraheze" },
+];
+
+// Địa chỉ liên hệ riêng của từng dự án wiki, ngoài các kênh chung ở trên.
+export const wikiContacts = [
+  { name: "Cookie Run Wiki", url: "https://cookierun.wiki", logoUrl: "/WCRVN.png",
+    emails: [{ addr: "pisces@cookierun.wiki" }] },
+  { name: "Wiki Lớp Học Mật Ngữ", url: "https://lophocmatngu.wiki", logoUrl: "/WLHMN.svg",
+    emails: [{ addr: "hotro@lophocmatngu.wiki", note: { vi: "Hỗ trợ dự án", en: "Project support" } },
+             { addr: "banquyen@lophocmatngu.wiki", note: { vi: "Bản quyền & sở hữu trí tuệ", en: "Copyright & intellectual property" } }] },
+  { name: "WikiOasis Foundation", url: "https://wikioasis.org", logoUrl: "/wikioasis.png",
+    emails: [{ addr: "pisces@wikioasis.org", note: { vi: "Liên hệ cá nhân tại nền tảng", en: "Platform personal contact" } }] },
 ];

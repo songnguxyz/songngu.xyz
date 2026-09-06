@@ -3,7 +3,7 @@ import React from "react";
 function Home({ t }) {
   return (
     <>
-      <main className="grow flex items-center justify-center relative isolate px-6 pt-24 pb-12 min-h-screen">
+      <main className="grow flex items-center justify-center relative isolate px-6 pt-20 pb-10 min-h-screen">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -49,11 +49,11 @@ function Home({ t }) {
       </main>
 
       <section
-        className="py-20 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
+        className="py-14 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
         id="projects"
       >
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="mb-12">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="mb-8">
             <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white transition-colors duration-500">
               {t.projTitle}
             </h2>
@@ -62,13 +62,13 @@ function Home({ t }) {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8 transition-colors duration-500">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 transition-colors duration-500">
             {t.projectsData.map((project) => (
               <div
                 key={project.id}
-                className="relative flex flex-col sm:flex-row gap-6 sm:gap-8 p-6 sm:p-8 rounded-3xl bg-white/80 dark:bg-[#1a0f2e]/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-500 overflow-hidden"
+                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-[#1a0f2e]/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-500 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-linear-to-r from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
                 {project.badges && project.badges.length > 0 && (
                   <div className="absolute top-6 right-6 flex items-center gap-2 z-10">
@@ -91,7 +91,7 @@ function Home({ t }) {
                   </div>
                 )}
 
-                <div className="w-32 h-32 p-4 shrink-0 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-100 dark:border-slate-700 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 z-10">
+                <div className="w-20 h-20 p-3 shrink-0 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-100 dark:border-slate-700 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 z-10">
                   <img
                     src={project.logoUrl}
                     alt={project.name}
@@ -99,8 +99,8 @@ function Home({ t }) {
                   />
                 </div>
 
-                <div className="flex flex-col justify-center grow sm:pr-24 z-10">
-                  <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-mxp-pink dark:group-hover:text-mxp-mint transition-colors duration-300">
+                <div className="flex flex-col grow z-10">
+                  <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2 group-hover:text-mxp-pink dark:group-hover:text-mxp-mint transition-colors duration-300">
                     <a
                       href={project.url}
                       target="_blank"
@@ -110,10 +110,10 @@ function Home({ t }) {
                       {project.name}
                     </a>
                   </h3>
-                  <p className="text-base text-slate-600 dark:text-slate-400 mb-4 max-w-2xl leading-relaxed transition-colors duration-500">
+                  <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed transition-colors duration-500">
                     {project.description}
                   </p>
-                  <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 transition-colors duration-500">
+                  <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 transition-colors duration-500 mt-auto">
                     {project.links.map((link, index) => (
                       <a
                         key={index}
@@ -135,11 +135,11 @@ function Home({ t }) {
       </section>
 
       <section
-        className="py-20 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
+        className="py-14 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
         id="affiliations"
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
+          <div className="mx-auto max-w-2xl text-center mb-10">
             <h2 className="text-base font-bold tracking-widest uppercase text-mxp-pink dark:text-mxp-mint">
               {t.netSub}
             </h2>
@@ -151,7 +151,7 @@ function Home({ t }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {t.affiliationsData.map((partner) => (
               <div
                 key={partner.id}
