@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../hooks/useLanguage";
+import { usePageMeta } from "../hooks/usePageMeta";
 
-function KhongTimThay({ t }) {
+function KhongTimThay() {
+  const { t } = useLanguage();
+  usePageMeta({
+    title: `${t.seoNotFoundTitle} — ${t.siteName}`,
+    description: t.notFoundDesc,
+  });
+
   return (
     <main
       id="noi-dung-chinh"
@@ -25,7 +33,7 @@ function KhongTimThay({ t }) {
       </p>
       <Link
         to="/"
-        className="mt-8 rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint focus-visible:ring-offset-2 ring-offset-slate-50 dark:ring-offset-[#120a23]"
+        className="mt-8 rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus-ring-offset"
       >
         {t.notFoundBtn}
       </Link>

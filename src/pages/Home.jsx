@@ -1,6 +1,13 @@
 import React from "react";
+import { affiliations } from "../content/affiliations";
+import { projects } from "../content/projects";
+import { useLanguage } from "../hooks/useLanguage";
+import { usePageMeta } from "../hooks/usePageMeta";
 
-function Home({ t }) {
+function Home() {
+  const { lang, t } = useLanguage();
+  usePageMeta({ title: t.seoHomeTitle, description: t.seoHomeDesc });
+
   return (
     <>
       <main
@@ -26,7 +33,7 @@ function Home({ t }) {
             <div className="mt-8 flex items-center justify-start gap-x-6">
               <a
                 href="#projects"
-                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint focus-visible:ring-offset-2 ring-offset-slate-50 dark:ring-offset-[#120a23]"
+                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus-ring-offset"
               >
                 {t.heroBtn}
               </a>
@@ -62,10 +69,10 @@ function Home({ t }) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 transition-colors duration-200">
-            {t.projectsData.map((project) => (
+            {projects[lang].map((project) => (
               <div
                 key={project.id}
-                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-[#1a0f2e]/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-200 overflow-hidden"
+                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-mxp-surface/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-200 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-linear-to-br from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
 
@@ -105,7 +112,7 @@ function Home({ t }) {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:underline decoration-2 underline-offset-4 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
+                      className="hover:underline decoration-2 underline-offset-4 rounded-sm focus-ring"
                     >
                       {project.name}
                     </a>
@@ -119,7 +126,7 @@ function Home({ t }) {
                         key={index}
                         href={link.url}
                         title={link.title}
-                        className="hover:text-mxp-pink dark:hover:text-mxp-mint hover:bg-slate-200 dark:hover:bg-slate-700 p-1.5 rounded-md transition-colors flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint"
+                        className="hover:text-mxp-pink dark:hover:text-mxp-mint hover:bg-slate-200 dark:hover:bg-slate-700 p-1.5 rounded-md transition-colors flex items-center focus-ring"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -152,7 +159,7 @@ function Home({ t }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {t.affiliationsData.map((partner) => (
+            {affiliations[lang].map((partner) => (
               <div
                 key={partner.id}
                 className={`relative overflow-hidden rounded-3xl p-8 backdrop-blur-md border shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 group ${

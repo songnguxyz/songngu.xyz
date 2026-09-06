@@ -9,12 +9,31 @@
   --color-mxp-teal: #26a69a; /* Xanh cổ vịt (Teal) */
   --color-mxp-mint: #a5d6a7; /* Xanh bạc hà (Mint) */
 
+  /* Nền chế độ tối */
+  --color-mxp-ink: #120a23; /* nền trang */
+  --color-mxp-surface: #1a0f2e; /* nền thẻ, panel */
+
   /* Ghi đè màu primary mặc định thành màu Hồng của MXP */
   --color-primary: var(--color-mxp-pink);
 
   /* Định nghĩa font chữ */
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Viền focus dùng chung. `focus-ring-offset` cho nút/thẻ nằm trên nền trang,
+   `focus-ring` cho link trong dòng văn bản. */
+@utility focus-ring {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint;
+}
+
+/* Hình học viền focus nhưng chưa có màu ring — dùng khi màu do brand quyết định. */
+@utility focus-outline {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-50 dark:ring-offset-mxp-ink;
+}
+
+@utility focus-ring-offset {
+  @apply focus-outline focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint;
 }
 
 html {

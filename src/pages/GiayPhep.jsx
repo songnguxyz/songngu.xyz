@@ -1,6 +1,14 @@
 import React from "react";
+import { useLanguage } from "../hooks/useLanguage";
+import { usePageMeta } from "../hooks/usePageMeta";
 
-function GiayPhep({ t, lang }) {
+function GiayPhep() {
+  const { lang, t } = useLanguage();
+  usePageMeta({
+    title: `${t.seoLicenseTitle} — ${t.siteName}`,
+    description: t.seoLicenseDesc,
+  });
+
   return (
     <main
       id="noi-dung-chinh"
@@ -12,7 +20,7 @@ function GiayPhep({ t, lang }) {
         </h1>
         <div className="max-w-none text-slate-600 dark:text-slate-300 transition-colors duration-200 font-medium pb-10">
           <p className="text-xl mb-6">{t.licenseDesc}</p>
-          <div className="p-8 bg-white/60 dark:bg-[#1a0f2e]/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-xl transition-all duration-200">
+          <div className="p-8 bg-white/60 dark:bg-mxp-surface/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-xl transition-all duration-200">
             {lang === "en" ? (
               <>
                 <p className="mb-4">
@@ -30,7 +38,7 @@ function GiayPhep({ t, lang }) {
                 </p>
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Open source</h2>
                 <p className="mb-6">
-                  Thanks to the open-source projects and libraries this site is built on. The source is released under the <a href="https://github.com/songnguxyz/songngu.xyz/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint">MIT licence</a> and available in the <a href="https://github.com/songnguxyz/songngu.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint">GitHub repository</a>.
+                  Thanks to the open-source projects and libraries this site is built on. The source is released under the <a href="https://github.com/songnguxyz/songngu.xyz/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus-ring">MIT licence</a> and available in the <a href="https://github.com/songnguxyz/songngu.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus-ring">GitHub repository</a>.
                 </p>
               </>
             ) : (
@@ -52,7 +60,7 @@ function GiayPhep({ t, lang }) {
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Mã nguồn mở</h2>
                 <p className="mb-6">
                   Chân thành cảm ơn các dự án mã nguồn mở và thư viện đã hỗ trợ xây dựng trang web này.
-                  Mã nguồn được phân phối dưới dạng mã nguồn mở dưới <a href="https://github.com/songnguxyz/songngu.xyz/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint">giấy phép MIT</a>, nơi bạn có thể xem qua trên <a href="https://github.com/songnguxyz/songngu.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-mxp-pink dark:focus-visible:ring-mxp-mint">kho GitHub</a>.
+                  Mã nguồn được phân phối dưới dạng mã nguồn mở dưới <a href="https://github.com/songnguxyz/songngu.xyz/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus-ring">giấy phép MIT</a>, nơi bạn có thể xem qua trên <a href="https://github.com/songnguxyz/songngu.xyz" target="_blank" rel="noopener noreferrer" className="font-semibold text-mxp-pink dark:text-mxp-mint underline underline-offset-4 decoration-mxp-pink/40 dark:decoration-mxp-mint/40 hover:decoration-mxp-pink dark:hover:decoration-mxp-mint transition-colors duration-300 rounded-sm focus-ring">kho GitHub</a>.
                 </p>
               </>
             )}
