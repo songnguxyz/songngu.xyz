@@ -26,17 +26,38 @@
   --font-display: "Playfair Display", ui-serif, Georgia, serif;
 
   /* Hoạt ảnh nền hero */
-  --animate-twinkle: twinkle 5s ease-in-out infinite;
   --animate-drift: drift 12s linear infinite;
+  --animate-orbit: orbit 180s linear infinite;
+  --animate-sweep: sweep 5s ease-in-out infinite;
+  --animate-swap: swap 24s ease-in-out infinite;
 
-  @keyframes twinkle {
-    0%,
-    30%,
-    100% {
-      opacity: 0.35;
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg);
     }
-    12% {
+  }
+
+  /* Dải sáng đi từ trên xuống trong 3 giây đầu, nghỉ 2 giây */
+  @keyframes sweep {
+    0% {
+      mask-position: 0 -50%;
+    }
+    60%,
+    100% {
+      mask-position: 0 150%;
+    }
+  }
+
+  /* Hiện 10 giây, mờ dần, ẩn 10 giây; lớp thứ hai lệch nửa chu kỳ để hai bên thay phiên */
+  @keyframes swap {
+    0%,
+    42%,
+    100% {
       opacity: 1;
+    }
+    50%,
+    92% {
+      opacity: 0;
     }
   }
 
