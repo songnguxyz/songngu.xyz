@@ -23,7 +23,7 @@
   /* Định nghĩa font chữ */
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
 }
 
 /* Viền focus dùng chung. `focus-ring-offset` cho nút/thẻ nằm trên nền trang,
