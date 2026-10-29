@@ -54,9 +54,8 @@ export const projects = {
       logoUrl: "/WCRVN.png",
       badges: [
         {
-          iconUrl: "/abxy.svg",
+          iconUrl: "/joystick.svg",
           title: "Lưu trữ bởi ABXY",
-          inverted: true,
         },
       ],
       links: [
@@ -178,9 +177,8 @@ export const projects = {
           title: "IWF Member",
         },
         {
-          iconUrl: "/abxy.svg",
+          iconUrl: "/joystick.svg",
           title: "Hosted by ABXY",
-          inverted: true,
         },
       ],
       links: [

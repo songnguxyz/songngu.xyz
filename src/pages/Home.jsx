@@ -178,7 +178,7 @@ function Home() {
                   <img
                     src={partner.logoUrl}
                     alt={partner.name}
-                    className={`h-full w-auto object-contain drop-shadow-md transition-all duration-200 ${partner.id === "iwf" ? "drop-shadow-2xl" : partner.id === "abxy" ? "invert dark:invert-0 dark:opacity-90 opacity-80" : "dark:opacity-90"}`}
+                    className={`h-full w-auto object-contain drop-shadow-md transition-all duration-200 ${partner.id === "iwf" ? "drop-shadow-2xl" : "dark:opacity-90"}`}
                   />
                 </div>
 

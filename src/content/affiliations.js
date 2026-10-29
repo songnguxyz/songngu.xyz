@@ -18,7 +18,7 @@ export const affiliations = {
     {
       id: "abxy",
       name: "ABXY (StrategyWiki)",
-      logoUrl: "/abxy.svg",
+      logoUrl: "/joystick.svg",
       description:
         "Hạ tầng máy chủ độc lập và phi thương mại và là đối tác cung cấp giải pháp hosting tự do cho Cookie Run Wiki",
     },
@@ -49,7 +49,7 @@ export const affiliations = {
     {
       id: "abxy",
       name: "ABXY (StrategyWiki)",
-      logoUrl: "/abxy.svg",
+      logoUrl: "/joystick.svg",
       description:
         "Independent and non-commercial server infrastructure providing hosting solutions for Cookie Run Wiki",
     },
