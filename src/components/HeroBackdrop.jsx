@@ -1,7 +1,7 @@
 import React from "react";
 
-// Nền trang trí sau hero: lưới chấm trôi chậm, ký hiệu ♓ (nửa trái) và chòm sao Song Ngư
-// (nửa phải) xoay chậm, thay phiên nhau hiện; ẩn trên điện thoại. Một dải sáng quét từ
+// Nền trang trí sau hero: lưới chấm trôi chậm, ký hiệu ♓ và chòm sao Song Ngư
+// cùng ở nửa trái, xoay chậm, thay phiên nhau hiện; ẩn trên điện thoại. Một dải sáng quét từ
 // trên xuống làm sao nháy lần lượt.
 // Tắt chuyển động khi người dùng bật giảm chuyển động (motion-safe).
 
@@ -32,28 +32,44 @@ const REAL = [
 
 // Ký hiệu ♓ của icon SN: hai cung quay lưng vào nhau và thanh ngang.
 const GLYPH = [
-  [-299, -300, 4.4],
-  [299, -300, 4.4],
-  [-225, -247, 4.4],
-  [225, -247, 4.4],
-  [-168, -175, 4.4],
-  [168, -175, 4.4],
-  [-131, -91, 4.4],
-  [131, -91, 4.4],
-  [-119, 0, 4.4],
-  [119, 0, 4.4],
-  [-131, 91, 4.4],
-  [131, 91, 4.4],
-  [-168, 175, 4.4],
-  [168, 175, 4.4],
-  [-225, 247, 4.4],
-  [225, 247, 4.4],
-  [-299, 300, 4.4],
-  [299, 300, 4.4],
-  [-204, 0, 4.4],
-  [-68, 0, 4.4],
-  [68, 0, 4.4],
-  [204, 0, 4.4],
+  [-299, -300, 4.2],
+  [299, -300, 4.2],
+  [-255, -272, 4.2],
+  [255, -272, 4.2],
+  [-216, -237, 4.2],
+  [216, -237, 4.2],
+  [-182, -197, 4.2],
+  [182, -197, 4.2],
+  [-155, -152, 4.2],
+  [155, -152, 4.2],
+  [-135, -103, 4.2],
+  [135, -103, 4.2],
+  [-123, -52, 4.2],
+  [123, -52, 4.2],
+  [-119, 0, 4.2],
+  [119, 0, 4.2],
+  [-123, 52, 4.2],
+  [123, 52, 4.2],
+  [-135, 103, 4.2],
+  [135, 103, 4.2],
+  [-155, 152, 4.2],
+  [155, 152, 4.2],
+  [-182, 197, 4.2],
+  [182, 197, 4.2],
+  [-216, 237, 4.2],
+  [216, 237, 4.2],
+  [-255, 272, 4.2],
+  [255, 272, 4.2],
+  [-299, 300, 4.2],
+  [299, 300, 4.2],
+  [-211, 0, 4.2],
+  [-163, 0, 4.2],
+  [-75, 0, 4.2],
+  [-27, 0, 4.2],
+  [27, 0, 4.2],
+  [75, 0, 4.2],
+  [163, 0, 4.2],
+  [211, 0, 4.2],
 ];
 
 function Stars({ stars }) {
@@ -72,7 +88,7 @@ function Stars({ stars }) {
 function StarField({ stars, className }) {
   return (
     <div className={`absolute inset-y-0 ${className}`}>
-      <div className="absolute inset-0 opacity-50">
+      <div className="absolute inset-0 opacity-60">
         <Stars stars={stars} />
       </div>
       <div className="absolute inset-0 hidden motion-safe:block mask-[linear-gradient(transparent,black_50%,transparent)] mask-size-[100%_30%] mask-no-repeat animate-sweep">
@@ -89,7 +105,7 @@ function HeroBackdrop() {
       className="absolute inset-0 -z-10 pointer-events-none"
     >
       <div className="absolute inset-0 text-mxp-pink/35 dark:text-mxp-mint/30 bg-[radial-gradient(currentColor_1.5px,transparent_1.5px)] bg-size-[28px_28px] mask-[radial-gradient(ellipse_at_center,black_30%,transparent_75%)] motion-safe:animate-drift" />
-      {/* ♓ bên trái và chòm sao bên phải thay phiên nhau hiện; khi tắt chuyển động chỉ còn chòm sao. */}
+      {/* ♓ và chòm sao thay phiên nhau hiện ở nửa trái; khi tắt chuyển động chỉ còn chòm sao. */}
       <div className="hidden md:block absolute inset-0 mx-auto max-w-7xl text-mxp-purple dark:text-mxp-mint">
         <StarField
           stars={GLYPH}
@@ -97,7 +113,7 @@ function HeroBackdrop() {
         />
         <StarField
           stars={REAL}
-          className="right-0 w-3/5 motion-safe:animate-swap motion-safe:[animation-delay:-12s]"
+          className="left-0 w-1/2 motion-safe:animate-swap motion-safe:[animation-delay:-12s]"
         />
       </div>
     </div>
