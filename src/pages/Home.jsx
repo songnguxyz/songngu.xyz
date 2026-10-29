@@ -12,19 +12,13 @@ function Home() {
     <>
       <main
         id="noi-dung-chinh"
-        className="grow flex items-center justify-center relative isolate px-6 pt-32 pb-16 min-h-screen"
+        className="grow flex items-center justify-center relative isolate px-6 pt-32 pb-16"
       >
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-mxp-pink via-mxp-blue to-mxp-mint opacity-40 dark:opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75 transition-opacity duration-200"></div>
-        </div>
 
         <div className="mx-auto max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8 relative z-10">
           <div className="flex flex-col justify-center items-start text-left w-full lg:w-1/2">
 
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-mxp-pink via-mxp-purple to-mxp-blue dark:from-mxp-mint dark:via-mxp-blue dark:to-mxp-pink drop-shadow-sm pb-2">
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               {t.heroTag}
             </h1>
             <p className="mt-2 text-lg md:text-xl leading-8 text-slate-600 dark:text-slate-300 max-w-2xl transition-colors duration-200 font-normal">
@@ -33,7 +27,7 @@ function Home() {
             <div className="mt-8 flex items-center justify-start gap-x-6">
               <a
                 href="#projects"
-                className="rounded-full bg-linear-to-r from-mxp-pink to-mxp-purple px-8 py-4 text-base font-bold text-white shadow-lg hover:shadow-2xl hover:-translate-y-1 hover:from-mxp-purple hover:to-mxp-blue transition-all duration-300 ring-1 ring-white/20 focus-ring-offset"
+                className="rounded-full bg-mxp-pink px-8 py-4 text-base font-bold text-white shadow-sm hover:brightness-90 transition-[filter] duration-200 focus-ring-offset"
               >
                 {t.heroBtn}
               </a>
@@ -42,7 +36,8 @@ function Home() {
           
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <img 
-              src="/hero.gif"
+              src="/hero.webp"
+              fetchPriority="high"
               alt=""
               width="1400"
               height="1400"
