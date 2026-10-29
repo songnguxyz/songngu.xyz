@@ -3,6 +3,7 @@ import { affiliations } from "../content/affiliations";
 import { projects } from "../content/projects";
 import { useLanguage } from "../hooks/useLanguage";
 import { usePageMeta } from "../hooks/usePageMeta";
+import HeroBackdrop from "../components/HeroBackdrop";
 
 function Home() {
   const { lang, t } = useLanguage();
@@ -14,6 +15,7 @@ function Home() {
         id="noi-dung-chinh"
         className="grow flex items-center justify-center relative isolate px-6 pt-32 pb-16"
       >
+        <HeroBackdrop />
 
         <div className="mx-auto max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-8 relative z-10">
           <div className="flex flex-col justify-center items-start text-left w-full lg:w-1/2">

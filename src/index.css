@@ -24,6 +24,27 @@
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Playfair Display", ui-serif, Georgia, serif;
+
+  /* Hoạt ảnh nền hero */
+  --animate-twinkle: twinkle 5s ease-in-out infinite;
+  --animate-drift: drift 12s linear infinite;
+
+  @keyframes twinkle {
+    0%,
+    30%,
+    100% {
+      opacity: 0.35;
+    }
+    12% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes drift {
+    to {
+      background-position: 28px 28px;
+    }
+  }
 }
 
 /* Viền focus dùng chung. `focus-ring-offset` cho nút/thẻ nằm trên nền trang,
