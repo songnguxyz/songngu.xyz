@@ -20,7 +20,7 @@ function GiayPhep() {
         </h1>
         <div className="max-w-none text-slate-600 dark:text-slate-300 transition-colors duration-200 font-medium pb-10">
           <p className="text-xl mb-6">{t.licenseDesc}</p>
-          <div className="p-8 bg-white/60 dark:bg-mxp-surface/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-xl transition-all duration-200">
+          <div className="p-8 bg-white dark:bg-mxp-surface rounded-3xl border border-slate-200 dark:border-slate-800">
             {lang === "en" ? (
               <>
                 <p className="mb-4">

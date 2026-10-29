@@ -48,9 +48,9 @@ function LienHe() {
                   target={isMailto ? undefined : "_blank"}
                   rel={isMailto ? undefined : "noopener noreferrer"}
                   style={brandStyle(item.variant)}
-                  className="p-8 bg-white/60 dark:bg-mxp-surface/60 rounded-3xl backdrop-blur-xl border border-slate-200 dark:border-slate-800 hover:border-[var(--brand)] dark:hover:border-[var(--brand-dark)] hover:shadow-2xl hover:-translate-y-1 focus-outline focus-visible:ring-[var(--brand)] dark:focus-visible:ring-[var(--brand-dark)] transition-all duration-200 flex flex-col items-center text-center group"
+                  className="p-8 bg-white dark:bg-mxp-surface rounded-3xl border border-slate-200 dark:border-slate-800 hover:border-[var(--brand)] dark:hover:border-[var(--brand-dark)] focus-outline focus-visible:ring-[var(--brand)] dark:focus-visible:ring-[var(--brand-dark)] transition-colors duration-200 flex flex-col items-center text-center group"
                 >
-                  <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
                     <span className="text-[var(--brand)] dark:text-[var(--brand-dark)]">
                       {item.icon}
                     </span>

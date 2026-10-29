@@ -14,7 +14,6 @@ export const strings = {
     projTitle: "Các dự án Wiki",
     projDesc:
       "Các dự án cộng đồng và không gian lưu trữ tri thức mà tôi đang vận hành hoặc đóng góp phát triển",
-    netSub: "Mạng lưới",
     netTitle: "Nền tảng & Liên minh",
     netDesc:
       "Tôi hoạt động trên nhiều nền tảng lưu trữ mở và tự hào là một phần của phong trào wiki độc lập toàn cầu",
@@ -63,7 +62,6 @@ export const strings = {
     projTitle: "Wiki Projects",
     projDesc:
       "Community projects and knowledge repositories I operate or contribute to",
-    netSub: "Network",
     netTitle: "Platforms & Alliances",
     netDesc:
       "Operating on multiple open hosting platforms and proud to be part of the global independent wiki movement",

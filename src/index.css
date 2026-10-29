@@ -13,6 +13,10 @@
   --color-mxp-ink: #120a23; /* nền trang */
   --color-mxp-surface: #1a0f2e; /* nền thẻ, panel */
 
+  /* Màu nhận diện Independent Wiki Federation */
+  --color-iwf-navy: #1c355e;
+  --color-iwf-deep: #0f1f38;
+
   /* Ghi đè màu primary mặc định thành màu Hồng của MXP */
   --color-primary: var(--color-mxp-pink);
 

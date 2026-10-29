@@ -43,7 +43,7 @@ function Home() {
               height="1400"
               draggable="false"
               onContextMenu={(e) => e.preventDefault()}
-              className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 select-none" 
+              className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl object-contain drop-shadow-2xl select-none"
             />
           </div>
         </div>
@@ -67,33 +67,9 @@ function Home() {
             {projects[lang].map((project) => (
               <div
                 key={project.id}
-                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white/80 dark:bg-mxp-surface/80 backdrop-blur-xl border border-white dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-2 group transition-all duration-200 overflow-hidden"
+                className="relative flex flex-col gap-4 p-6 rounded-3xl bg-white dark:bg-mxp-surface border border-slate-200 dark:border-slate-800 shadow-sm hover:border-mxp-pink/50 dark:hover:border-mxp-mint/50 group transition-colors duration-200 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-linear-to-br from-mxp-pink/5 to-mxp-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"></div>
-
-                {project.badges && project.badges.length > 0 && (
-                  <div className="absolute top-6 right-6 flex items-center gap-2 z-10">
-                    {project.badges.map((badge, index) => (
-                      <button
-                        key={index}
-                        type="button"
-                        className="group/badge relative h-8 px-3 rounded-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-center opacity-80 hover:opacity-100 hover:scale-105 focus:scale-105 transition-all cursor-help before:absolute before:-inset-2 before:content-['']"
-                        aria-label={badge.title}
-                      >
-                        <img
-                          src={badge.iconUrl}
-                          alt=""
-                          className={`w-4 h-4 object-contain shrink-0 ${badge.inverted ? "invert dark:invert-0 opacity-80 dark:opacity-100" : ""}`}
-                        />
-                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 whitespace-nowrap overflow-hidden transition-all duration-300 max-w-0 opacity-0 md:group-hover/badge:max-w-xs md:group-hover/badge:ml-2 md:group-hover/badge:opacity-100 group-focus/badge:max-w-xs group-focus/badge:ml-2 group-focus/badge:opacity-100">
-                          {badge.title}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-
-                <div className="w-20 h-20 p-3 shrink-0 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-100 dark:border-slate-700 group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 z-10">
+                <div className="w-20 h-20 p-3 shrink-0 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center shadow-inner border border-slate-100 dark:border-slate-700 z-10">
                   <img
                     src={project.logoUrl}
                     alt={project.name}
@@ -115,6 +91,25 @@ function Home() {
                   <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 leading-relaxed transition-colors duration-200">
                     {project.description}
                   </p>
+                  {project.badges && project.badges.length > 0 && (
+                    <div className="flex flex-wrap items-center gap-2 mb-4">
+                      {project.badges.map((badge, index) => (
+                        <span
+                          key={index}
+                          className="h-8 px-3 rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center gap-2"
+                        >
+                          <img
+                            src={badge.iconUrl}
+                            alt=""
+                            className={`w-4 h-4 object-contain shrink-0 ${badge.inverted ? "invert dark:invert-0 opacity-80 dark:opacity-100" : ""}`}
+                          />
+                          <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 whitespace-nowrap">
+                            {badge.title}
+                          </span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400 transition-colors duration-200 mt-auto">
                     {project.links.map((link, index) => (
                       <a
@@ -140,73 +135,71 @@ function Home() {
         className="py-14 scroll-mt-28 relative isolate border-t border-slate-200/60 dark:border-slate-800/60"
         id="affiliations"
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-10">
-            <h2 className="text-base font-bold tracking-widest uppercase text-mxp-pink dark:text-mxp-mint">
-              {t.netSub}
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 dark:text-white transition-colors duration-200">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               {t.netTitle}
-            </p>
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 transition-colors duration-200">
+            </h2>
+            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
               {t.netDesc}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {affiliations[lang].map((partner) => (
+          <ul className="border-t border-slate-200 dark:border-slate-800">
+            {affiliations[lang]
+              .filter((partner) => partner.id !== "iwf")
+              .map((partner) => (
+                <li
+                  key={partner.id}
+                  className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 py-6 border-b border-slate-200 dark:border-slate-800"
+                >
+                  <div className="w-12 h-12 shrink-0 flex items-center justify-center">
+                    <img
+                      src={partner.logoUrl}
+                      alt=""
+                      className="max-h-full max-w-full w-auto object-contain"
+                    />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                      {partner.name}
+                    </h3>
+                    <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                      {partner.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+          </ul>
+
+          {affiliations[lang]
+            .filter((partner) => partner.id === "iwf")
+            .map((partner) => (
               <div
                 key={partner.id}
-                className={`relative overflow-hidden rounded-3xl p-8 backdrop-blur-md border shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 group ${
-                  partner.id === "iwf"
-                    ? "md:col-span-3 flex flex-col md:flex-row items-center justify-center gap-8 md:text-left text-center bg-linear-to-br from-[#1c355e] to-[#0f1f38] border-blue-800/50"
-                    : "text-center bg-white/70 dark:bg-slate-800/70 border-white dark:border-slate-700/50"
-                }`}
+                className="mt-10 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 text-center md:text-left bg-linear-to-br from-iwf-navy to-iwf-deep border border-blue-800/50"
               >
-                {partner.id === "iwf" && (
-                  <div className="absolute inset-0 bg-linear-to-br from-mxp-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl pointer-events-none"></div>
-                )}
-
-                <div
-                  className={`flex items-center justify-center relative z-10 ${partner.id === "iwf" ? "h-24 sm:h-32 w-auto shrink-0" : "h-20 mb-8"}`}
-                >
-                  <img
-                    src={partner.logoUrl}
-                    alt={partner.name}
-                    className={`h-full w-auto object-contain drop-shadow-md transition-all duration-200 ${partner.id === "iwf" ? "drop-shadow-2xl" : "dark:opacity-90"}`}
-                  />
-                </div>
-
-                <div className={partner.id === "iwf" ? "max-w-2xl" : ""}>
-                  <h4
-                    className={
-                      partner.id === "iwf"
-                        ? "text-white text-xl font-semibold mb-2 relative z-10"
-                        : "text-slate-800 dark:text-white text-lg font-bold mb-3 relative z-10"
-                    }
-                  >
+                <img
+                  src={partner.logoUrl}
+                  alt=""
+                  className="h-24 sm:h-32 w-auto shrink-0 object-contain drop-shadow-2xl"
+                />
+                <div className="max-w-2xl">
+                  <h3 className="text-white text-xl font-semibold mb-2">
                     {partner.name}
-                  </h4>
-                  <p
-                    className={`text-sm transition-colors duration-200 ${partner.id === "iwf" ? "text-blue-100 relative z-10" : "text-slate-600 dark:text-slate-300"}`}
+                  </h3>
+                  <p className="text-sm text-blue-100">{partner.description}</p>
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block rounded-full bg-blue-600/20 border border-blue-400/30 px-6 py-2.5 text-sm font-bold text-blue-100 hover:bg-blue-600/40 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-200"
                   >
-                    {partner.description}
-                  </p>
-
-                  {partner.id === "iwf" && (
-                     <a
-                      href={partner.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-6 inline-block rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-400/30 px-6 py-2.5 text-sm font-bold text-blue-100 hover:bg-blue-600/40 hover:text-white hover:scale-105 hover:shadow-lg transition-all relative z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-200"
-                    >
-                      {t.learnMore}
-                    </a>
-                  )}
+                    {t.learnMore}
+                  </a>
                 </div>
               </div>
             ))}
-          </div>
         </div>
       </section>
     </>
