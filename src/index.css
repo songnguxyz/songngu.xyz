@@ -23,6 +23,7 @@
   /* Định nghĩa font chữ */
   --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Viền focus dùng chung. `focus-ring-offset` cho nút/thẻ nằm trên nền trang,
@@ -61,4 +62,11 @@ html.dark {
 body {
   margin: 0;
   font-family: var(--font-sans);
+}
+
+/* Tiêu đề dùng font riêng, tách khỏi Montserrat của thân bài */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
 }

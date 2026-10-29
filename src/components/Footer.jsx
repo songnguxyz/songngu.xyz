@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { socialLinks } from "../content/contacts";
+import { useLanguage } from "../hooks/useLanguage";
 
 function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="relative isolate border-t border-slate-200/60 dark:border-slate-800/60 font-inter">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -25,7 +28,13 @@ function Footer() {
 
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-sm leading-5 text-slate-500 dark:text-slate-400 transition-colors duration-200">
-            &copy; {new Date().getFullYear()} SongNgư.xyz.
+            &copy; {new Date().getFullYear()} SongNgư.xyz ·{" "}
+            <Link
+              to="/giayphep"
+              className="underline underline-offset-4 hover:text-mxp-pink dark:hover:text-mxp-mint transition-colors rounded-sm focus-ring"
+            >
+              {t.footerLicense}
+            </Link>
           </p>
         </div>
       </div>
