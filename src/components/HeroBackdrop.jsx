@@ -1,7 +1,7 @@
 import React from "react";
 
 // Nền trang trí sau hero: lưới chấm trôi chậm, ký hiệu ♓ và chòm sao Song Ngư
-// nhỏ, ở giữa hero, xoay chậm, thay phiên nhau hiện; ẩn trên điện thoại. Một dải sáng quét từ
+// cùng ở nửa trái, xoay chậm, thay phiên nhau hiện; ẩn trên điện thoại. Một dải sáng quét từ
 // trên xuống làm sao nháy lần lượt.
 // Tắt chuyển động khi người dùng bật giảm chuyển động (motion-safe).
 
@@ -77,7 +77,7 @@ function Stars({ stars }) {
     <svg viewBox="-500 -500 1000 1000" className="w-full h-full">
       <g className="motion-safe:animate-orbit">
         {stars.map(([x, y, m], i) => (
-          <circle key={i} cx={x} cy={y} r={(7 - m) * 3.5} fill="currentColor" />
+          <circle key={i} cx={x} cy={y} r={(7 - m) * 1.6} fill="currentColor" />
         ))}
       </g>
     </svg>
@@ -105,15 +105,15 @@ function HeroBackdrop() {
       className="absolute inset-0 -z-10 pointer-events-none"
     >
       <div className="absolute inset-0 text-mxp-pink/35 dark:text-mxp-mint/30 bg-[radial-gradient(currentColor_1.5px,transparent_1.5px)] bg-size-[28px_28px] mask-[radial-gradient(ellipse_at_center,black_30%,transparent_75%)] motion-safe:animate-drift" />
-      {/* ♓ và chòm sao thay phiên nhau hiện ở giữa; khi tắt chuyển động chỉ còn chòm sao. */}
+      {/* ♓ và chòm sao thay phiên nhau hiện ở nửa trái; khi tắt chuyển động chỉ còn chòm sao. */}
       <div className="hidden md:block absolute inset-0 mx-auto max-w-7xl text-mxp-purple dark:text-mxp-mint">
         <StarField
           stars={GLYPH}
-          className="left-1/2 -translate-x-1/2 w-72 hidden motion-safe:block animate-swap"
+          className="left-0 w-1/2 hidden motion-safe:block animate-swap"
         />
         <StarField
           stars={REAL}
-          className="left-1/2 -translate-x-1/2 w-72 motion-safe:animate-swap motion-safe:[animation-delay:-12s]"
+          className="left-0 w-1/2 motion-safe:animate-swap motion-safe:[animation-delay:-12s]"
         />
       </div>
     </div>
